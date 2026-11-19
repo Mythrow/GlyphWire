@@ -63,12 +63,12 @@ const SpiralScene: React.FC<{f: number}> = ({f}) => {
   const dots = Array.from({length: 140}).map((_, i) => {
     const t = i / 140;
     const angle = t * Math.PI * 6 + f * 0.09;
-    const r = 40 + t * 300;
-    return {x: cx + Math.cos(angle) * r, y: cy + Math.sin(angle) * r * 0.6, size: 2 + t * 5, op: 0.3 + t * 0.7};
+    const r = 60 + t * 440;
+    return {x: cx + Math.cos(angle) * r, y: cy + Math.sin(angle) * r * 0.6, size: 2.5 + t * 6, op: 0.3 + t * 0.7};
   });
   const rings = [0, 1, 2].map((k) => {
     const p = ((f + k * 20) % 60) / 60;
-    return {r: 60 + p * 320, op: 1 - p};
+    return {r: 80 + p * 460, op: 1 - p};
   });
   return (
     <svg width={W} height={H} style={{position: 'absolute', inset: 0}}>
@@ -113,7 +113,7 @@ const Gauge: React.FC<{f: number; delay: number; frac: number; color: string; la
       </svg>
       <div>
         <div style={{fontFamily: FONT, color: MUTED, fontSize: 32, letterSpacing: 4, textTransform: 'uppercase'}}>{label}</div>
-        <div style={{fontFamily: FONT, color, fontSize: 84, fontWeight: 800, lineHeight: 1.05}}>{value}</div>
+        <div style={{fontFamily: FONT, color, fontSize: 72, fontWeight: 800, lineHeight: 1.05, whiteSpace: 'nowrap'}}>{value}</div>
       </div>
     </div>
   );
@@ -122,9 +122,9 @@ const Gauge: React.FC<{f: number; delay: number; frac: number; color: string; la
 // Scene 3: storm track curving in to the coast, with a moving marker.
 const TrackScene: React.FC<{f: number}> = ({f}) => {
   // Path from the storm (top right) curving to the landfall point near Gopalpur (lower middle).
-  const start = {x: 900, y: 1000};
-  const land = {x: 480, y: 1420};
-  const ctrl = {x: 760, y: 1240};
+  const start = {x: 940, y: 900};
+  const land = {x: 420, y: 1440};
+  const ctrl = {x: 900, y: 1280};
   const path = `M ${start.x} ${start.y} Q ${ctrl.x} ${ctrl.y} ${land.x} ${land.y}`;
   const t = interpolate(f, [0, 70], [0, 1], clamp);
   // Quadratic Bezier position at t.
@@ -135,7 +135,7 @@ const TrackScene: React.FC<{f: number}> = ({f}) => {
   return (
     <svg width={W} height={H} style={{position: 'absolute', inset: 0}}>
       {/* coastline */}
-      <path d="M 0 1480 Q 300 1420 540 1470 T 1080 1500" fill="none" stroke={MUTED} strokeWidth={3} />
+      <path d="M 0 1500 Q 300 1430 540 1490 T 1080 1510" fill="none" stroke={MUTED} strokeWidth={3} />
       <path d={path} fill="none" stroke={CYAN} strokeOpacity={0.35} strokeWidth={4} strokeDasharray="14 14" />
       {cloud.map((c, k) => (
         <circle key={k} cx={bx} cy={by} r={c.r} fill="none" stroke={CYAN} strokeOpacity={c.op} strokeWidth={3} />
@@ -175,10 +175,10 @@ export const CycloneShort: React.FC = () => {
         {(f) => (
           <>
             <SpiralScene f={frame} />
-            <div style={{position: 'absolute', top: 380, left: 90, right: 90}}>
+            <div style={{position: 'absolute', top: 300, left: 90, right: 90, textAlign: 'center'}}>
               <Rise f={f} delay={0} style={{fontFamily: FONT, color: CYAN, fontSize: 40, letterSpacing: 8}}>BREAKING · INDIA</Rise>
             </div>
-            <div style={{position: 'absolute', bottom: 420, left: 90, right: 90}}>
+            <div style={{position: 'absolute', bottom: 380, left: 90, right: 90, textAlign: 'center'}}>
               <Rise f={f} delay={12} style={{fontFamily: FONT, color: WHITE, fontSize: 124, fontWeight: 900, lineHeight: 1.02}}>
                 SEVERE CYCLONIC STORM
               </Rise>
@@ -212,10 +212,10 @@ export const CycloneShort: React.FC = () => {
             <div style={{position: 'absolute', top: 360, left: 90, right: 90}}>
               <Rise f={f} delay={0} style={{fontFamily: FONT, color: CYAN, fontSize: 40, letterSpacing: 8, marginBottom: 30}}>LANDFALL</Rise>
               <Rise f={f} delay={8} style={{fontFamily: FONT, color: WHITE, fontSize: 96, fontWeight: 800, lineHeight: 1.08}}>
-                By noon Friday, 20 Nov
+                By noon Friday<br />20 Nov
               </Rise>
               <Rise f={f} delay={18} style={{fontFamily: FONT, color: MUTED, fontSize: 44, marginTop: 30, lineHeight: 1.4}}>
-                Between Narsapur and Puri, near Gopalpur
+                Between Narsapur and Puri,<br />near Gopalpur
               </Rise>
             </div>
           </>
@@ -229,7 +229,7 @@ export const CycloneShort: React.FC = () => {
             <div style={{position: 'absolute', top: 360, left: 90, right: 90}}>
               <Rise f={f} delay={0} style={{fontFamily: FONT, color: AMBER, fontSize: 40, letterSpacing: 8, marginBottom: 30}}>ALERT</Rise>
               <Rise f={f} delay={8} style={{fontFamily: FONT, color: WHITE, fontSize: 96, fontWeight: 800, lineHeight: 1.1}}>
-                Storm surge 0.5–1.0 m
+                Storm surge<br />0.5–1.0 m
               </Rise>
               <Rise f={f} delay={18} style={{fontFamily: FONT, color: CYAN, fontSize: 44, marginTop: 30}}>
                 Fishing suspended
