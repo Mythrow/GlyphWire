@@ -1,18 +1,20 @@
 import React from 'react';
 import {AbsoluteFill, Easing, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {color, font as fontTok, layout, motion} from './theme/tokens';
+import {Wordmark} from './theme/Logo';
 
-const BG_TOP = '#05070D';
-const BG_BOT = '#0A1424';
-const CYAN = '#3DE6FF';
-const VIOLET = '#7B61FF';
-const AMBER = '#FFB547';
-const TEXT = '#F4F8FF';
-const SUB = '#8FA3BF';
-const FONT = 'Inter, "Helvetica Neue", Arial, sans-serif';
-const W = 1080;
-const H = 1920;
-const EASE = Easing.bezier(0.16, 1, 0.3, 1);
-const IN_OUT = Easing.bezier(0.65, 0, 0.35, 1);
+const BG_TOP = color.bgTop;
+const BG_BOT = color.bgBottom;
+const CYAN = color.accent;
+const VIOLET = color.accent2;
+const AMBER = color.warning;
+const TEXT = color.text;
+const SUB = color.textMuted;
+const FONT = fontTok.family;
+const W = layout.width;
+const H = layout.height;
+const EASE = motion.enter;
+const IN_OUT = motion.inOut;
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
 // Words fly up from a mask with a spring, staggered per word.
@@ -97,6 +99,7 @@ const Background: React.FC<{px: number; py: number}> = ({px, py}) => {
           <line key={`h${i}`} x1={-60} y1={i * 60 + off - 60} x2={W + 60} y2={i * 60 + off - 60} stroke="#FFFFFF" strokeOpacity={0.04} />
         ))}
       </svg>
+      <div style={{position: 'absolute', top: 80, left: layout.safeX}}><Wordmark size={24} /></div>
     </AbsoluteFill>
   );
 };
