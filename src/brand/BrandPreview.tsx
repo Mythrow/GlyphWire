@@ -1,19 +1,18 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { Logo } from "./Logo";
-import { enter } from "./motion";
-import { fontFamily, fontsReady } from "./fonts";
-import { palette, sizes, frame as frameSize, minTextPx } from "./tokens";
-import { durationFrames, staggerFrames } from "./motion";
+import { durationFrames, enter, staggerFrames } from "./motion";
+import { fontFamily } from "./fonts";
+import { palette, sizes, minTextPx } from "./tokens";
 
-// Preview of the brand on a Short frame. Used to check tokens, type and logo in motion.
+export const TOTAL_FRAMES = 150;
+
+// Brand check on a Short frame: tokens, type, logo and motion together.
 export const BrandPreview: React.FC = () => {
   const f = useCurrentFrame();
-  // Wait for fonts so the first frames never render in a fallback face.
-  const fontsLoaded = fontsReady !== undefined;
   const logoProgress = enter(f, 0, durationFrames.slow);
-  const headline = enter(f, staggerFrames * 2, durationFrames.base);
   const label = enter(f, 0, durationFrames.fast);
+  const headline = enter(f, staggerFrames * 2, durationFrames.base);
   const lower = enter(f, durationFrames.slow, durationFrames.base);
 
   return (
@@ -97,10 +96,8 @@ export const BrandPreview: React.FC = () => {
           borderRadius: 4,
         }}
       >
-        <div style={{ width: `${(f / 150) * 100}%`, height: 8, background: palette.primary, borderRadius: 4 }} />
+        <div style={{ width: `${(f / TOTAL_FRAMES) * 100}%`, height: 8, background: palette.primary, borderRadius: 4 }} />
       </div>
-      {fontsLoaded && null}
-      <span style={{ display: "none" }}>{frameSize.aspect}</span>
     </AbsoluteFill>
   );
 };
