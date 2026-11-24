@@ -12,8 +12,6 @@ export type LogoProps = {
 // Signal G mark. Geometry matches brand/logo/glyphwire-mark.svg exactly.
 export const Logo: React.FC<LogoProps> = ({ size, progress = 1, tile = true }) => {
   const lime = palette.primary;
-  const ringLength = 2 * Math.PI * 28 * (300 / 360);
-  const dash = ringLength * progress;
 
   return (
     <svg width={size} height={size} viewBox="0 0 120 120" role="img" aria-label="GlyphWire logo">
@@ -23,8 +21,9 @@ export const Logo: React.FC<LogoProps> = ({ size, progress = 1, tile = true }) =
           d="M74.84 36.25A28 28 0 1 0 88 60H67"
           strokeWidth={9}
           strokeLinejoin="round"
-          strokeDasharray={`${ringLength} ${ringLength}`}
-          strokeDashoffset={ringLength - dash}
+          pathLength={1}
+          strokeDasharray="1 1"
+          strokeDashoffset={1 - progress}
         />
         <path d="M81.24 27.29A39 39 0 0 1 96.41 46.02" strokeWidth={4} opacity={progress} />
         <path d="M85.05 21.42A46 46 0 0 1 102.94 43.52" strokeWidth={4} opacity={0.65 * progress} />
