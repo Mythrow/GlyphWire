@@ -37,6 +37,7 @@ export const BrandPreview: React.FC = () => {
           lineHeight: 1.04,
           color: palette.text,
           marginTop: 48,
+          paddingRight: 240,
           opacity: headline,
           transform: `translateY(${(1 - headline) * 24}px)`,
         }}
