@@ -66,6 +66,13 @@ Last updated: 2026-11-25.
 - **US–China topic:** the connection line flickers lime and coral, then settles on coral.
 - **Alert colour:** Alert Coral #FF625C, as approved on 2026-11-19.
 
+### Layouts (approved in the project chat, 2026-11-25)
+- **Partner hub:** the US flag in the centre, with partner flags branching out on a ring.
+- **Radar:** the Section 301 scanner, with lime and coral blips.
+
+### Music file (approved in the project chat, 2026-11-25)
+- **Project music file:** `brand/audio/news-bed-128bpm.mp3`, the 128 BPM bed the owner approved. Only this file is in the repo. Videos and renders stay in the project folder.
+
 ### Music (approved in the project chat, 2026-11-25)
 - **Bed:** the 128 BPM track the owner supplied. The end is looped on its last full bar before the one-hit ending fades, so the fade is not played.
 - **Level:** the bed sits under the narration. The owner asked for it to be raised a little.
@@ -81,7 +88,6 @@ These are not decided. Each needs an owner decision before work depends on it.
 - **Thread model:** whether video build threads should move from the current
   model to Haiku 5.5 at medium effort.
 - **Partner flags:** only the US, China, the EU and Japan have flags. The other partner flags await the owner's list of countries.
-- **Hub and radar layout:** the owner has seen the latest version and has not signed off each detail.
 - **Music level:** the mix level under narration may be adjusted after the owner listens.
 - **Dark-only or light variant:** whether some videos need a light background.
 - **Vertical format:** confirm 9:16 as the standard for all Shorts.
