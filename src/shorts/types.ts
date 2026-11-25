@@ -5,6 +5,8 @@ export type ShortProps = {
   headline: string; // two lines max
   body: string; // one idea, lower third
   progress?: number; // 0 to 1, shown on the bar; defaults to the playhead
+  glyph?: "trade" | "hub"; // story glyph in the middle of the frame, chosen for the story
+  facts?: string[]; // up to 3 short lines for the middle of the frame
   durationSeconds: number; // 15 to 60
 };
 

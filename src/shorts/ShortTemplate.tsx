@@ -5,6 +5,7 @@ import { durationFrames, enter, staggerFrames } from "../brand/motion";
 import { fontFamily } from "../brand/fonts";
 import { palette, sizes, minTextPx } from "../brand/tokens";
 import type { ShortProps } from "./types";
+import { StoryGlyph } from "./Glyphs";
 
 // Shared Short layout, drawn from the approved kit frame.
 // Motion: label fades in, headline rises, logo draws, lower third slides up,
@@ -53,6 +54,33 @@ export const ShortTemplate: React.FC<ShortProps> = (props) => {
 
       <div style={{ position: "absolute", top: 96, right: 96 }}>
         <Logo size={120} progress={logoProgress} />
+      </div>
+
+      {props.glyph ? (
+        <div style={{ position: "absolute", top: 660, left: 0, right: 0, display: "flex", justifyContent: "center", opacity: enter(f, staggerFrames * 3, durationFrames.base) }}>
+          <StoryGlyph kind={props.glyph} size={460} progress={enter(f, staggerFrames * 3, durationFrames.slow)} />
+        </div>
+      ) : null}
+
+      <div style={{ position: "absolute", top: 960, left: 96, right: 96 }}>
+        {(props.facts ?? []).map((fact, i) => (
+          <div
+            key={i}
+            style={{
+              fontFamily: fontFamily.body,
+              fontSize: 40,
+              lineHeight: 1.25,
+              color: palette.text,
+              display: "flex",
+              gap: 28,
+              marginBottom: 28,
+              opacity: enter(f, durationFrames.slow + staggerFrames * (i + 1), durationFrames.base),
+            }}
+          >
+            <span style={{ fontFamily: fontFamily.label, color: palette.primary, minWidth: 48 }}>{String(i + 1).padStart(2, "0")}</span>
+            <span>{fact}</span>
+          </div>
+        ))}
       </div>
 
       <div
