@@ -43,8 +43,7 @@ export const ShortTemplate: React.FC<ShortProps> = (props) => {
           fontSize: sizes.headline,
           lineHeight: 1.04,
           color: palette.text,
-          marginTop: 48,
-          paddingRight: 240,
+          marginTop: 120,
           opacity: headline,
           transform: `translateY(${(1 - headline) * 24}px)`,
         }}
@@ -52,8 +51,8 @@ export const ShortTemplate: React.FC<ShortProps> = (props) => {
         {props.headline}
       </div>
 
-      <div style={{ position: "absolute", top: 120, right: 96 }}>
-        <Logo size={180} progress={logoProgress} />
+      <div style={{ position: "absolute", top: 96, right: 96 }}>
+        <Logo size={120} progress={logoProgress} />
       </div>
 
       <div
@@ -74,24 +73,9 @@ export const ShortTemplate: React.FC<ShortProps> = (props) => {
           transform: `translateY(${(1 - lower) * 40}px)`,
         }}
       >
-        <div style={{ fontFamily: fontFamily.label, fontSize: sizes.label, color: palette.primary }}>
-          {props.status}
-        </div>
-        <div style={{ marginTop: 24 }}>{props.body}</div>
+        <div>{props.body}</div>
       </div>
 
-      <div
-        style={{
-          position: "absolute",
-          left: 96,
-          bottom: 140,
-          fontFamily: fontFamily.label,
-          fontSize: Math.max(sizes.label, minTextPx),
-          color: palette.muted,
-        }}
-      >
-        {props.source}
-      </div>
 
       <div
         style={{
