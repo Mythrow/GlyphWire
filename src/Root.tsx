@@ -4,6 +4,7 @@ import { BrandPreview, TOTAL_FRAMES } from "./brand/BrandPreview";
 import { frame } from "./brand/tokens";
 import { ShortTemplate } from "./shorts/ShortTemplate";
 import { TariffShort } from "./shorts/TariffShort";
+import { ChinaShort } from "./shorts/ChinaShort";
 import { defaultShortProps, ShortProps } from "./shorts/types";
 
 const FPS = 30;
@@ -32,6 +33,15 @@ export const RemotionRoot: React.FC = () => {
         fps={FPS}
         width={frame.width}
         height={frame.height}
+      />
+      <Composition
+        id="ChinaStoryboard"
+        component={ChinaShort}
+        durationInFrames={720}
+        fps={FPS}
+        width={frame.width}
+        height={frame.height}
+        defaultProps={{ beat: 0 }}
       />
       <Composition
         id="TariffShort"
