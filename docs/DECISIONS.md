@@ -2,7 +2,7 @@
 
 This log records only what the project owner has approved in the project chat.
 Items still undecided are listed under **Open**, not as decisions.
-Last updated: 2026-11-24.
+Last updated: 2026-11-25.
 
 ## Approved decisions
 
@@ -13,7 +13,7 @@ Last updated: 2026-11-24.
 ### Format
 - **Length:** 15 to 30 seconds. Up to about one minute when a story needs it.
 - **Content type:** quick informative videos, not detailed explainers.
-- **Audio:** no voiceover. Light background music.
+- **Audio:** narration by one approved voice, af_jessica (Kokoro, free and open source), with light background music. One voice across all Shorts.
 
 ### Visual style
 - Modern-futuristic motion graphics, not an infographic or slide presentation.
@@ -66,6 +66,7 @@ These are not decided. Each needs an owner decision before work depends on it.
   live blogs, could not be fetched. The owner may paste article text instead.
 - **Thread model:** whether video build threads should move from the current
   model to Haiku 5.5 at medium effort.
+- **Background music:** the loop is generated in code (ambient electronic, about 90 BPM). The owner has not yet approved the final loop.
 - **Dark-only or light variant:** whether some videos need a light background.
 - **Vertical format:** confirm 9:16 as the standard for all Shorts.
 - **Ivory:** the owner chose #F7F8F2 for text. Whether it is clear of other brands' colors is not checked.
