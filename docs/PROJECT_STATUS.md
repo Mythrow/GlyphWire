@@ -16,3 +16,6 @@ Owner approved borrowing Bharat Mode's motion craft while preserving GlyphWire's
 Browser proof inspected separately in chat; US flag crop and radar contrast adjusted in source. Native Remotion validation remains outstanding.
 
 Latest visual review candidate: aligned header, stronger two-line headline, licensed circular flags. No final visual approval or actual narration sync yet.
+
+## Adaptive news storytelling (2026-11-27)
+Owner approved opening hero alongside headline, persistent headline, sources in description only, no outro, and broad adaptive storytelling/module direction. Further questions and map design choices remain open. NEWS_VISUAL_SYSTEM.md records implementation guidance and review candidates. Existing Remotion tariff previews are not yet migrated to this system; native build/CI remains unresolved. Visual showcase prepared separately for owner review, not a publishable story.

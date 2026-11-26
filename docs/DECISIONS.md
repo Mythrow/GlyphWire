@@ -57,7 +57,7 @@ Last updated: 2026-11-27.
   in Project settings.
 
 ### Video style (approved in the project chat, 2026-11-25)
-- **Main topics only on screen.** The voice carries the detail. Each topic shows one large title and one hero object.
+- **Historical tariff layout:** one large title and one hero per topic was the initial approach. Superseded for future stories by the adaptive storytelling direction below.
 - **Headline:** full size for the opening, then it shrinks and stays on screen.
 - **Text animation:** every letter animates in, one after another.
 - **Partner topic:** the US flag is in the centre of a hub, with partner flags branching out on a ring. Flags are circular.
@@ -79,12 +79,25 @@ Last updated: 2026-11-27.
 
 ### Visual refinement (owner confirmed 2026-11-27)
 - Use Bharat Mode as a read-only reference for animation craft, scene construction, independent layers, constructive motion, narration-led cues, transitions and visual QA, not for brand styling.
-- Preserve the existing GlyphWire frame: Signal G at top right (120px, top/right 96px), category top left, opening headline and shrink, original typography, dark Ink background, topic and hero positioning, continuous lime progress bar (8px, 96px gutters and bottom), and existing margins.
+- Preserve the existing GlyphWire frame: Signal G at top right (120px, top/right 96px), category top left, opening headline and shrink, original typography, dark Ink background, original topic/hero positioning for legacy previews, continuous lime progress bar (8px, 96px gutters and bottom), and existing margins.
 - No segmented progress, relocated logo, additional captions, changed palette or new typography without owner approval. Keep current narration and music decisions.
 - Prototype refined hero motion within the existing frame. Keep 30fps until a frame-rate change is explicitly approved. Visual prototype approval remains separate from the general direction.
 
-## Open
+### Visual feedback (2026-11-27)
+- Correct optical alignment of top-left BREAKING label with the top-right Signal G; preserve logo location and size.
+- Use stronger two-line editorial headline styling, with an opening headline shrinking and remaining on screen. Preview treatment is subject to review.
+- Use purpose-designed circular flags from kapowaz/circle-flags rather than cropping rectangular flags. Preserve flag identity and correct inaccurate artwork; unknown flags remain neutral placeholders.
 
+### News storytelling system (owner approved direction, 2026-11-27)
+- Opening: the first meaningful hero visual begins alongside the headline; no dedicated intro.
+- Persistent headline: opening headline shrinks and remains throughout.
+- Sources: full attribution in the video description only, not in-frame. Speaker identity, units, dates and other necessary factual context are not source citations and may appear.
+- Ending: finish on the last meaningful news development, no separate outro.
+- Approved overall direction: adaptive central storytelling area, one dominant message at a time with supporting elements as needed, optional topic title, meaningful continuity across beats, reusable news visual modules, and narration-led timing. Story dictates the sequence, not a mandatory slide order. See NEWS_VISUAL_SYSTEM.md. This replaces the rigid one-topic/one-glyph rule for future stories, not the fixed brand chrome.
+- Owner wants a better map system than the earlier schematic example. Use genuine geospatial data in prototypes; final map styling, dataset version, boundary policy and module variants remain for review.
+- Owner agrees with the broad framework but has further questions. Detailed limits, module-specific styling, layout variants and transitions are candidates, not individually locked approvals.
+
+## Open
 These are not decided. Each needs an owner decision before work depends on it.
 
 - **Fact-check rule for other sources:** whether to require two independent
@@ -98,8 +111,4 @@ These are not decided. Each needs an owner decision before work depends on it.
 - **Dark-only or light variant:** whether some videos need a light background.
 - **Vertical format:** confirm 9:16 as the standard for all Shorts.
 - **Ivory:** the owner chose #F7F8F2 for text. Whether it is clear of other brands' colors is not checked.
-
-### Visual feedback (2026-11-27)
-- Correct optical alignment of top-left BREAKING label with the top-right Signal G; preserve logo location and size.
-- Use stronger two-line editorial headline styling, with an opening headline shrinking and remaining on screen. Preview treatment is subject to review.
-- Use purpose-designed circular flags from kapowaz/circle-flags rather than cropping rectangular flags. Preserve flag identity and correct inaccurate artwork; unknown flags remain neutral placeholders.
+- **Visual module choices:** review showcase, map projection/detail, disputed boundary handling, precise reading/hold times, subtitle policy and any further owner questions. Do not infer final module approval from the direction approval.

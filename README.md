@@ -2,7 +2,7 @@
 
 A YouTube Shorts channel: quick, informative, modern-futuristic motion graphics about news, built in Remotion.
 
-Start here: [approved decisions](docs/DECISIONS.md) → [current status](docs/PROJECT_STATUS.md) → [production workflow](docs/PRODUCTION.md). Agents also read [AGENTS.md](AGENTS.md).
+Start here: [approved decisions](docs/DECISIONS.md) → [current status](docs/PROJECT_STATUS.md) → [production workflow](docs/PRODUCTION.md) → [news visual system](docs/NEWS_VISUAL_SYSTEM.md). Agents also read [AGENTS.md](AGENTS.md).
 
 ## Quick start
 ```sh
@@ -13,7 +13,7 @@ npm start
 npm run render:preview
 npm run render:tariff
 ```
-The tariff render is a visual proof, not a final video. New stories use the Short composition with structured props; LegacyShort preserves the older lower-third layout.
+The tariff render is a visual proof, not a final video. Short is the existing topic-based preview engine; future adaptive modules are described in the news visual system and await implementation/approval; LegacyShort preserves the older lower-third layout.
 
 ## Layout
 

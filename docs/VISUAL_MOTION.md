@@ -16,3 +16,6 @@ Studio compositions: TariffBaseline and TariffShort. At 30fps use frames 135,270
 Latest review: header label centered on the existing 120px logo row; two-line headline in ivory/lime and original shrink behavior; native circular flag art. Continuous progress and hero positions retained. EU badge corrected to twelve upright stars. The approved original baseline remains available; this refinement is a review candidate.
 
 The explicit two-line candidate uses 90px headline type and no wrapping within each line, after browser layout checking; baseline retains original headline styling. Actual approved-font fit must still be verified in Remotion.
+
+## Superseding storytelling direction
+See DECISIONS.md and NEWS_VISUAL_SYSTEM.md for owner-approved adaptive storytelling. The fixed topic and hero positions above describe the tariff preview, not mandatory future scene layout. Module-specific styling remains under review.
