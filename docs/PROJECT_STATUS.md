@@ -19,3 +19,5 @@ Latest visual review candidate: aligned header, stronger two-line headline, lice
 
 ## Adaptive news storytelling (2026-11-27)
 Owner approved opening hero alongside headline, persistent headline, sources in description only, no outro, and broad adaptive storytelling/module direction. Further questions and map design choices remain open. NEWS_VISUAL_SYSTEM.md records implementation guidance and review candidates. Existing Remotion tariff previews are not yet migrated to this system; native build/CI remains unresolved. Visual showcase prepared separately for owner review, not a publishable story.
+
+Owner selected both quotation, number, photography and weather variants, and all three adaptive geographic modes. Decisions recorded; individual module designs, precise map data/boundary choices and production implementation remain pending. No production code changes in this documentation update.

@@ -94,8 +94,17 @@ Last updated: 2026-11-27.
 - Sources: full attribution in the video description only, not in-frame. Speaker identity, units, dates and other necessary factual context are not source citations and may appear.
 - Ending: finish on the last meaningful news development, no separate outro.
 - Approved overall direction: adaptive central storytelling area, one dominant message at a time with supporting elements as needed, optional topic title, meaningful continuity across beats, reusable news visual modules, and narration-led timing. Story dictates the sequence, not a mandatory slide order. See NEWS_VISUAL_SYSTEM.md. This replaces the rigid one-topic/one-glyph rule for future stories, not the fixed brand chrome.
-- Owner wants a better map system than the earlier schematic example. Use genuine geospatial data in prototypes; final map styling, dataset version, boundary policy and module variants remain for review.
+- Owner wants a better map system than the earlier schematic example. Use genuine geospatial data in prototypes; final map styling, dataset version and boundary policy remain for review; supported variants are approved below.
 - Owner agrees with the broad framework but has further questions. Detailed limits, module-specific styling, layout variants and transitions are candidates, not individually locked approvals.
+
+### Approved visual module capabilities (2026-11-27)
+- Quotations: support both typography-led and portrait-led quotes.
+- Numerical information: support both large editorial numbers and compact data panels.
+- Geography: adaptive selection from Equal Earth world overview, regional focus using an appropriate local projection, and orthographic globe; support meaningful transitions between modes when appropriate.
+- Photography: support both circular portraits and rectangular editorial photography.
+- Weather: support both minimal animated condition icons and detailed atmospheric visuals. Distinguish observations from forecasts and use verified data.
+
+Choose variants according to the story, not a fixed sequence. Approval applies to supported capabilities, not final artwork, exact map styling, boundary policy or production implementation. Keep fixed brand chrome and source attribution in the description only.
 
 ## Open
 These are not decided. Each needs an owner decision before work depends on it.
@@ -111,4 +120,4 @@ These are not decided. Each needs an owner decision before work depends on it.
 - **Dark-only or light variant:** whether some videos need a light background.
 - **Vertical format:** confirm 9:16 as the standard for all Shorts.
 - **Ivory:** the owner chose #F7F8F2 for text. Whether it is clear of other brands' colors is not checked.
-- **Visual module choices:** review showcase, map projection/detail, disputed boundary handling, precise reading/hold times, subtitle policy and any further owner questions. Do not infer final module approval from the direction approval.
+- **Visual module refinement:** final artwork, map detail/dataset/boundary handling, precise reading/hold times, subtitle policy and further owner questions. Supported variants are approved above; production render approval remains separate.
