@@ -14,3 +14,5 @@ Motion inside the hero only:
 Studio compositions: TariffBaseline and TariffShort. At 30fps use frames 135,270,405,495 as scene starts. Review intermediate and settled frames and full mobile playback. Existing source and voice are missing; actual acoustic cues and final publication approval are pending. Motion is deterministic from frame index, no wall-clock/random animation. No external image requests.
 
 Latest review: header label centered on the existing 120px logo row; two-line headline in ivory/lime and original shrink behavior; native circular flag art. Continuous progress and hero positions retained. EU badge corrected to twelve upright stars. The approved original baseline remains available; this refinement is a review candidate.
+
+The explicit two-line candidate uses 90px headline type and no wrapping within each line, after browser layout checking; baseline retains original headline styling. Actual approved-font fit must still be verified in Remotion.

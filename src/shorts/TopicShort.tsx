@@ -30,7 +30,7 @@ export const TopicShort: React.FC<TopicShortProps> = (props) => {
   return (
     <AbsoluteFill style={{ background: palette.background, padding: 96, boxSizing: "border-box" }}>
       {props.audioPath ? <Audio src={staticFile(props.audioPath)} /> : null}
-      <div style={{ position: "absolute", left: 96, top: original ? 96 : 96 + 60, transformOrigin: "left center", fontFamily: fontFamily.label, fontSize: Math.max(sizes.label, minTextPx), color: palette.primary, letterSpacing: ".06em", opacity: label, transform: `translateY(${(original ? 0 : -50)}%) translateY(${(1 - label) * -20}px)` }}>
+      <div style={{ ...(original ? {} : {position: "absolute", left: 96, top: 156, transformOrigin: "left center"}), fontFamily: fontFamily.label, fontSize: Math.max(sizes.label, minTextPx), color: palette.primary, letterSpacing: ".06em", opacity: label, transform: `translateY(${(original ? 0 : -50)}%) translateY(${(1 - label) * -20}px)` }}>
         <LetterReveal text={props.category} start={0} perChar={1} duration={8} />
       </div>
 
@@ -38,10 +38,10 @@ export const TopicShort: React.FC<TopicShortProps> = (props) => {
         style={{
           fontFamily: fontFamily.display,
           fontWeight: 700,
-          fontSize: sizes.headline,
+          fontSize: !original && props.headlineLines ? 90 : sizes.headline,
           lineHeight: 1.04,
           color: palette.text,
-          position: "absolute", top: 258, left: 96, right: 96,
+          ...(original ? {marginTop: 120} : {position: "absolute", top: 258, left: 96, right: 96}),
           textAlign: original ? "left" : "center",
           letterSpacing: original ? 0 : "-0.025em",
           opacity: headline,
@@ -50,8 +50,8 @@ export const TopicShort: React.FC<TopicShortProps> = (props) => {
         }}
       >
         {!original && props.headlineLines ? <>
-          <div><LetterReveal text={props.headlineLines[0]} start={8} perChar={1} duration={8}/></div>
-          <div style={{color: palette.primary}}><LetterReveal text={props.headlineLines[1]} start={8 + Array.from(props.headlineLines[0]).length + 1} perChar={1} duration={8}/></div>
+          <div style={{whiteSpace: "nowrap"}}><LetterReveal text={props.headlineLines[0]} start={8} perChar={1} duration={8}/></div>
+          <div style={{color: palette.primary, whiteSpace: "nowrap"}}><LetterReveal text={props.headlineLines[1]} start={8 + Array.from(props.headlineLines[0]).length + 1} perChar={1} duration={8}/></div>
         </> : <LetterReveal text={props.headline} start={8} perChar={1} duration={8} />}
       </div>
 
