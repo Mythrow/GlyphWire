@@ -1,0 +1,19 @@
+{
+  "voice": {
+    "engine": "kokoro",
+    "voice": "af_jessica",
+    "language": "a",
+    "speed": 1,
+    "status": "approved_identity_not_generated"
+  },
+  "music": {
+    "path": "brand/audio/news-bed-128bpm.mp3",
+    "bpm": 128,
+    "beatsPerBar": 4,
+    "loopEndSeconds": null,
+    "voiceGain": null,
+    "musicGain": null,
+    "rightsStatus": "redistribution_not_verified",
+    "status": "owner_approved_track_mix_pending"
+  }
+}

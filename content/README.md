@@ -1,0 +1,3 @@
+# Content registry
+
+registry.json is the canonical record of ideas and release state. IDs are stable (GW-001 etc.); eventKey identifies the event, not the article. Reuse an existing record for duplicate coverage. Preserve past items. Track statuses idea, draft, preview, approved, uploaded, scheduled, published. Approved or later requires explicit owner approval; published requires an actual confirmed publication date or URL. External sources and owner-reported provenance must be distinguished; don't invent dates or links. Status is not evidence of source verification. For unpublished ideas, a storyPath may be null. Keep private material outside Git.

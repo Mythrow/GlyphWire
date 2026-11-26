@@ -5,7 +5,10 @@
   "scripts": {
     "start": "remotion studio",
     "render:preview": "remotion render BrandPreview out/brand-preview.mp4",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "render:tariff": "remotion render TariffShort out/tariff-preview.mp4",
+    "render:story": "remotion render Short out/story-preview.mp4",
+    "validate": "node --test scripts/validate.test.mjs && node scripts/validate.mjs"
   },
   "dependencies": {
     "@remotion/google-fonts": "4.0.200",

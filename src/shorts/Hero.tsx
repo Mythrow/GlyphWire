@@ -1,19 +1,24 @@
 import React from "react";
 import { palette } from "../brand/tokens";
 import { enter } from "../brand/motion";
-import { FlagIcon, FlagCode } from "./Flags";
+import { FlagIcon } from "./Flags";
+import type { HeroSpec } from "./topicTypes";
+import { StoryGlyph } from "./Glyphs";
 
 // Approved colours for the scanner and tension states.
 const LIME = palette.primary;
 const CORAL = palette.alert;
 
 // The hero object for each main topic. `t` is frames since the topic began.
-export const Hero: React.FC<{ topic: number; t: number; width: number }> = ({ topic, t, width }) => {
-  if (topic === 0) {
+export const Hero: React.FC<{ spec: HeroSpec; t: number; width: number }> = ({ spec, t, width }) => {
+  if (spec.kind === "trade" || spec.kind === "hub") {
+    return <StoryGlyph kind={spec.kind} size={width * 0.7} progress={enter(t, 0, 22)} />;
+  }
+  if (spec.kind === "partner-hub") {
     // Hub: US flag in the centre, partner flags branching out on the ring.
     const cx = width / 2, cy = width / 2, R = width * 0.36;
-    const nodes = 13;
-    const codes: (FlagCode | null)[] = ["CN", "EU", "JP", ...Array(nodes - 3).fill(null)];
+    const codes = spec.partners;
+    const nodes = codes.length;
     const hub = enter(t, 0, 14);
     return (
       <div style={{ position: "relative", width, height: width }}>
@@ -26,7 +31,7 @@ export const Hero: React.FC<{ topic: number; t: number; width: number }> = ({ to
           })}
         </svg>
         <div style={{ position: "absolute", left: cx - 105, top: cy - 105, opacity: hub, transform: `scale(${0.6 + 0.4 * hub})` }}>
-          <FlagIcon code="US" size={210} />
+          <FlagIcon code={spec.center} size={210} />
         </div>
         {codes.map((code, i) => {
           const a = -Math.PI / 2 + (i * 2 * Math.PI) / nodes;
@@ -42,7 +47,7 @@ export const Hero: React.FC<{ topic: number; t: number; width: number }> = ({ to
     );
   }
 
-  if (topic === 1) {
+  if (spec.kind === "radar") {
     // Radar: a sweep rotates; blips light up as it passes, green or red.
     const sweep = (t * 3) % 360;
     const a = (sweep * Math.PI) / 180;
@@ -67,7 +72,7 @@ export const Hero: React.FC<{ topic: number; t: number; width: number }> = ({ to
     );
   }
 
-  if (topic === 2) {
+  if (spec.kind === "rate-dial") {
     // Deal-based rates: a dial whose needle keeps moving. No figure shown.
     const sweep = 0.5 + 0.45 * Math.sin(t / 14);
     const theta = Math.PI * (1 - sweep);
@@ -83,7 +88,8 @@ export const Hero: React.FC<{ topic: number; t: number; width: number }> = ({ to
     );
   }
 
-  // US and China: the connection flickers lime and coral, then settles on coral.
+  // Two confirmed flags: connection flickers lime and coral, then settles on coral.
+  if (spec.kind !== "connection") return null;
   const flickerEnd = 40;
   const flicker = t < flickerEnd;
   const on = Math.floor(t / 3) % 2 === 0;
@@ -91,9 +97,9 @@ export const Hero: React.FC<{ topic: number; t: number; width: number }> = ({ to
   const k = enter(t, 0, 12);
   return (
     <div style={{ position: "relative", width, height: width * 0.4, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-      <div style={{ opacity: k, transform: `scale(${0.7 + 0.3 * k})` }}><FlagIcon code="US" size={width * 0.3} /></div>
+      <div style={{ opacity: k, transform: `scale(${0.7 + 0.3 * k})` }}><FlagIcon code={spec.left} size={width * 0.3} /></div>
       <div style={{ position: "absolute", left: width * 0.3, right: width * 0.3, top: "50%", height: 8, background: lineColor, borderRadius: 4, opacity: 0.4 + 0.6 * k }} />
-      <div style={{ opacity: k, transform: `scale(${0.7 + 0.3 * k})` }}><FlagIcon code="CN" size={width * 0.3} /></div>
+      <div style={{ opacity: k, transform: `scale(${0.7 + 0.3 * k})` }}><FlagIcon code={spec.right} size={width * 0.3} /></div>
     </div>
   );
 };

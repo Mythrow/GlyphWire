@@ -1,0 +1,54 @@
+{
+  "category": "BREAKING · WORLD",
+  "headline": "US readies tariffs on 14+ trading partners",
+  "durationSeconds": 24,
+  "timingStatus": "provisional",
+  "topics": [
+    {
+      "text": "14+ trading partners",
+      "startFrame": 135,
+      "hero": {
+        "kind": "partner-hub",
+        "center": "US",
+        "partners": [
+          "CN",
+          "EU",
+          "JP",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "text": "Section 301",
+      "startFrame": 270,
+      "hero": {
+        "kind": "radar"
+      }
+    },
+    {
+      "text": "Deal-based rates",
+      "startFrame": 405,
+      "hero": {
+        "kind": "rate-dial"
+      }
+    },
+    {
+      "text": "US–China tension",
+      "startFrame": 495,
+      "hero": {
+        "kind": "connection",
+        "left": "US",
+        "right": "CN"
+      }
+    }
+  ]
+}
