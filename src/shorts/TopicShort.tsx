@@ -56,7 +56,7 @@ export const TopicShort: React.FC<TopicShortProps> = (props) => {
 
       {topic ? (
         <div
-          key={topicIndex}
+          key={`text-${topicIndex}`}
           style={{
             position: "absolute",
             top: 640,

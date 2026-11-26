@@ -8,8 +8,9 @@
     "typecheck": "tsc --noEmit",
     "render:tariff": "remotion render TariffShort out/tariff-preview.mp4",
     "render:story": "remotion render Short out/story-preview.mp4",
-    "validate": "node --test scripts/validate.test.mjs && node scripts/validate.mjs",
-    "render:baseline": "remotion render TariffBaseline out/tariff-baseline.mp4"
+    "validate": "node --test scripts/validate.test.mjs && node scripts/validate.mjs && npm run visual:check",
+    "render:baseline": "remotion render TariffBaseline out/tariff-baseline.mp4",
+    "visual:check": "node --experimental-strip-types --test scripts/hero-art.test.mjs"
   },
   "dependencies": {
     "@remotion/google-fonts": "4.0.200",

@@ -13,8 +13,12 @@ const circle=(x:number,y:number,r:number,fill:string,stroke="none",w=1,o=1)=>'<c
 const path=(d:string,c:string,w=2,o=1)=>'<path d="'+d+'" fill="none" stroke="'+c+'" stroke-width="'+w+'" stroke-linecap="round" opacity="'+o+'"/>';
 const flag=(code:string|null,x:number,y:number,r:number,opacity:number,flags:Record<string,string>,p:Colors,id:string)=>{
   const image=code && flags[code];
+  // The external SVG's own aspect ratio is respected: explicitly oversize the
+  // image and clip the center, matching the original circular objectFit cover.
+  const aspect=code==="US"?7410/3900:1.5;
+  const imageWidth=2*r*aspect;
   return '<g opacity="'+opacity+'">'+circle(x,y,r+5,p.panel,p.border,2)+
-    (image?'<clipPath id="'+id+'"><circle cx="'+x+'" cy="'+y+'" r="'+r+'"/></clipPath><image href="'+image+'" x="'+(x-r)+'" y="'+(y-r)+'" width="'+2*r+'" height="'+2*r+'" preserveAspectRatio="xMidYMid slice" clip-path="url(#'+id+')"/>':circle(x,y,r,p.panel,p.muted,1,.42)+circle(x,y,3,p.muted,"none",1,.6))+
+    (image?'<clipPath id="'+id+'"><circle cx="'+x+'" cy="'+y+'" r="'+r+'"/></clipPath><image href="'+image+'" x="'+(x-imageWidth/2)+'" y="'+(y-r)+'" width="'+imageWidth+'" height="'+2*r+'" preserveAspectRatio="xMidYMid slice" clip-path="url(#'+id+')"/>':circle(x,y,r,p.panel,p.muted,1,.42)+circle(x,y,3,p.muted,"none",1,.6))+
     circle(x,y,r+1,"none",p.muted,1,.35)+'</g>';
 };
 export function heroArt(spec:HeroSpec,t:number,p:Colors,flags:Record<string,string>):string {
@@ -24,14 +28,14 @@ export function heroArt(spec:HeroSpec,t:number,p:Colors,flags:Record<string,stri
     const cx=410,cy=410,R=295,n=spec.partners.length;
     const core=reveal(t,0,15),ring=reveal(t,5,24);
     layers.push(circle(cx,cy,320,"none",p.border,1,ring*.8));
-    layers.push(path(arc(cx,cy,R,-Math.PI/2,-Math.PI/2+Math.PI*1.999*ring),a,3,.45));
+    layers.push(path(arc(cx,cy,R,-Math.PI/2,-Math.PI/2+Math.PI*1.999*ring),a,3,.58));
     layers.push(circle(cx,cy,126,"none",a,2,core*.4),circle(cx,cy,115,"none",b,1,core*.35));
     spec.partners.forEach((code,i)=>{
       const angle=-Math.PI/2+i*2*Math.PI/n,[x,y]=point(cx,cy,R,angle);
       const start=13+i*5,k=reveal(t,start,14),dock=reveal(t,start+10,13);
       const [sx,sy]=point(cx,cy,112,angle);
       const ex=sx+(x-sx)*k,ey=sy+(y-sy)*k;
-      layers.push(line(sx,sy,ex,ey,a,3,.65*k));
+      layers.push(line(sx,sy,ex,ey,a,3,.75*k));
       if(k>0 && k<1) layers.push(circle(ex,ey,5,a));
       if(dock>0){
         const pulse=((t-start+1200)%72)/72;
@@ -44,8 +48,8 @@ export function heroArt(spec:HeroSpec,t:number,p:Colors,flags:Record<string,stri
   } else if(spec.kind==="radar"){
     const cx=410,cy=410,rr=340,k=reveal(t,0,18),sweep=(Math.max(0,t-10)*3-90)*Math.PI/180;
     layers.push(circle(cx,cy,rr+14,"none",p.border,2,k));
-    [105,195,275,340].forEach((r,i)=>layers.push(path(arc(cx,cy,r,-Math.PI/2,-Math.PI/2+Math.PI*1.999*reveal(t,i*3,19)),a,i===3?4:2,.26)));
-    for(let i=0;i<48;i++){const v=i*Math.PI/24,[x,y]=point(cx,cy,rr+5,v),[ex,ey]=point(cx,cy,rr+(i%4===0?23:12),v);layers.push(line(x,y,ex,ey,p.muted,i%4===0?2:1,k*.35));}
+    [105,195,275,340].forEach((r,i)=>layers.push(path(arc(cx,cy,r,-Math.PI/2,-Math.PI/2+Math.PI*1.999*reveal(t,i*3,19)),a,i===3?5:3,.43)));
+    for(let i=0;i<48;i++){const v=i*Math.PI/24,[x,y]=point(cx,cy,rr+5,v),[ex,ey]=point(cx,cy,rr+(i%4===0?23:12),v);layers.push(line(x,y,ex,ey,p.muted,i%4===0?2:1,k*.48));}
     layers.push(line(cx-rr,cy,cx+rr,cy,b,1,k*.17),line(cx,cy-rr,cx,cy+rr,b,1,k*.17));
     const [ex,ey]=point(cx,cy,rr,sweep);
     for(let i=1;i<=16;i++){const [x,y]=point(cx,cy,rr,sweep-i*.035);layers.push(line(cx,cy,x,y,a,4,k*.13*(1-i/17)));}
@@ -68,7 +72,7 @@ export function heroArt(spec:HeroSpec,t:number,p:Colors,flags:Record<string,stri
     layers.push(line(cx,cy,cx+(ex-cx)*needle,cy+(ey-cy)*needle,a,8,needle),circle(ex,ey,8,a,"none",1,needle),circle(cx,cy,27,p.panel,b,2,k),circle(cx,cy,12,a,"none",1,k));
     layers.push(line(cx-105,cy+72,cx+105,cy+72,p.border,2,k));
   } else if(spec.kind==="connection"){
-    const cy=164,left=123,right=697,r=123,k=reveal(t,0,16),j=reveal(t,5,16),draw=reveal(t,10,18);
+    const cy=164,left=131,right=689,r=123,k=reveal(t,0,16),j=reveal(t,5,16),draw=reveal(t,10,18);
     const sx=left+r,ex=right-r,mid=(sx+ex)/2;
     const flicker=t>=50?1:Math.floor(Math.max(0,t-12)/5)%2;
     const col=flicker?c:a;
