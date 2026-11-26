@@ -11,6 +11,7 @@ export type Topic = { text: string; startFrame: number; hero: HeroSpec };
 export type TopicShortProps = {
   category: string;
   headline: string;
+  headlineLines?: [string, string];
   durationSeconds: number;
   timingStatus: "provisional" | "aligned";
   topics: Topic[];

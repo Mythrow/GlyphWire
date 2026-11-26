@@ -11,3 +11,5 @@ Scope: Mythrow/GlyphWire only. Read README.md, docs/DECISIONS.md, docs/PROJECT_S
 - Keep private/generated audio, video, credentials and unlicensed assets out of public Git; verify redistribution rights for any committed media. The already committed music is unchanged, rights confirmation remains open.
 - Run npm run validate, npm run typecheck and relevant render/phone/audio QA before release. Never claim tests/rendering/publishing succeeded unless verified. Owner approves and uploads; no automatic publication.
 - Update the current-status page and registry only to reflect actual verified progress; approved decisions go in DECISIONS.md only after owner approval. No changes to Bharat Mode.
+
+- Latest visual feedback: align category text vertically with the existing logo; use stronger editorial headline and native circular flags, keeping remaining brand chrome unchanged. See DECISIONS.md.

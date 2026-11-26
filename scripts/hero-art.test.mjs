@@ -27,7 +27,9 @@ test("connection resolves to approved coral",()=>{
   const svg=heroArt(story.topics[3].hero,100,palette,flags);
   assert.ok(svg.includes('stroke="'+palette.alert+'"'));assert.equal((svg.match(/<image /g)||[]).length,2);
 });
-test("fixed frame geometry remains unchanged",()=>{
+test("fixed brand geometry remains unchanged",()=>{
   const frame=readFileSync(new URL("../src/shorts/TopicShort.tsx",import.meta.url),"utf8");
   for(const fragment of ['padding: 96','top: 96, right: 96','<Logo size={120}','top: 640','top: 860','bottom: 96, height: 8','scale(${1 - 0.42 * shrink})','background: palette.background','f / durationInFrames'])assert.ok(frame.includes(fragment),fragment);
 });
+
+test("circular art is not clipped or stretched",()=>{const svg=heroArt(story.topics[0].hero,120,palette,flags);assert.doesNotMatch(svg,/clip-path|<clipPath|xMidYMid slice/);assert.ok(svg.includes('xMidYMid meet'));});

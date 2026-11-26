@@ -14,3 +14,5 @@
 Owner approved borrowing Bharat Mode's motion craft while preserving GlyphWire's original frame. Enhanced tariff hero geometry is now implemented in Hero.tsx and heroArt.ts; TariffBaseline preserves the original hero version, TariffShort uses the enhanced version. Both use identical headline, logo, label, progress, story timing, size and margins. Four hero scenes have layered formation, line drawing, pulses, scan trails and dial detail; no new factual labels or guessed flags/rates. Timings remain provisional. No actual Remotion render, real audio alignment or final owner visual approval asserted. Compare reference frames and verify CI/build before merge.
 
 Browser proof inspected separately in chat; US flag crop and radar contrast adjusted in source. Native Remotion validation remains outstanding.
+
+Latest visual review candidate: aligned header, stronger two-line headline, licensed circular flags. No final visual approval or actual narration sync yet.

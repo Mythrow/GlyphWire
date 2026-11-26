@@ -13,12 +13,9 @@ const circle=(x:number,y:number,r:number,fill:string,stroke="none",w=1,o=1)=>'<c
 const path=(d:string,c:string,w=2,o=1)=>'<path d="'+d+'" fill="none" stroke="'+c+'" stroke-width="'+w+'" stroke-linecap="round" opacity="'+o+'"/>';
 const flag=(code:string|null,x:number,y:number,r:number,opacity:number,flags:Record<string,string>,p:Colors,id:string)=>{
   const image=code && flags[code];
-  // The external SVG's own aspect ratio is respected: explicitly oversize the
-  // image and clip the center, matching the original circular objectFit cover.
-  const aspect=code==="US"?7410/3900:1.5;
-  const imageWidth=2*r*aspect;
+  // Circular artwork already fits its own square view; no cropping or stretch.
   return '<g opacity="'+opacity+'">'+circle(x,y,r+5,p.panel,p.border,2)+
-    (image?'<clipPath id="'+id+'"><circle cx="'+x+'" cy="'+y+'" r="'+r+'"/></clipPath><image href="'+image+'" x="'+(x-imageWidth/2)+'" y="'+(y-r)+'" width="'+imageWidth+'" height="'+2*r+'" preserveAspectRatio="xMidYMid slice" clip-path="url(#'+id+')"/>':circle(x,y,r,p.panel,p.muted,1,.42)+circle(x,y,3,p.muted,"none",1,.6))+
+    (image?'<image href="'+image+'" x="'+(x-r)+'" y="'+(y-r)+'" width="'+2*r+'" height="'+2*r+'" preserveAspectRatio="xMidYMid meet"/>':circle(x,y,r,p.panel,p.muted,1,.42)+circle(x,y,3,p.muted,"none",1,.6))+
     circle(x,y,r+1,"none",p.muted,1,.35)+'</g>';
 };
 export function heroArt(spec:HeroSpec,t:number,p:Colors,flags:Record<string,string>):string {

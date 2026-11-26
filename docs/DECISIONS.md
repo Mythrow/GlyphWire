@@ -98,3 +98,8 @@ These are not decided. Each needs an owner decision before work depends on it.
 - **Dark-only or light variant:** whether some videos need a light background.
 - **Vertical format:** confirm 9:16 as the standard for all Shorts.
 - **Ivory:** the owner chose #F7F8F2 for text. Whether it is clear of other brands' colors is not checked.
+
+### Visual feedback (2026-11-27)
+- Correct optical alignment of top-left BREAKING label with the top-right Signal G; preserve logo location and size.
+- Use stronger two-line editorial headline styling, with an opening headline shrinking and remaining on screen. Preview treatment is subject to review.
+- Use purpose-designed circular flags from kapowaz/circle-flags rather than cropping rectangular flags. Preserve flag identity and correct inaccurate artwork; unknown flags remain neutral placeholders.
