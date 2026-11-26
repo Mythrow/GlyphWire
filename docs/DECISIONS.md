@@ -2,7 +2,7 @@
 
 This log records only what the project owner has approved in the project chat.
 Items still undecided are listed under **Open**, not as decisions.
-Last updated: 2026-11-25.
+Last updated: 2026-11-27.
 
 ## Approved decisions
 
@@ -76,6 +76,12 @@ Last updated: 2026-11-25.
 ### Music (approved in the project chat, 2026-11-25)
 - **Bed:** the 128 BPM track the owner supplied. The end is looped on its last full bar before the one-hit ending fades, so the fade is not played.
 - **Level:** the bed sits under the narration. The owner asked for it to be raised a little.
+
+### Visual refinement (owner confirmed 2026-11-27)
+- Use Bharat Mode as a read-only reference for animation craft, scene construction, independent layers, constructive motion, narration-led cues, transitions and visual QA, not for brand styling.
+- Preserve the existing GlyphWire frame: Signal G at top right (120px, top/right 96px), category top left, opening headline and shrink, original typography, dark Ink background, topic and hero positioning, continuous lime progress bar (8px, 96px gutters and bottom), and existing margins.
+- No segmented progress, relocated logo, additional captions, changed palette or new typography without owner approval. Keep current narration and music decisions.
+- Prototype refined hero motion within the existing frame. Keep 30fps until a frame-rate change is explicitly approved. Visual prototype approval remains separate from the general direction.
 
 ## Open
 

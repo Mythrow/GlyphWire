@@ -49,6 +49,15 @@ export const RemotionRoot: React.FC = () => {
         height={frame.height}
       />
       <Composition
+        id="TariffBaseline"
+        component={TopicShort}
+        defaultProps={{...tariffPreview, heroVersion: "original"} as TopicShortProps}
+        durationInFrames={720}
+        fps={FPS}
+        width={frame.width}
+        height={frame.height}
+      />
+      <Composition
         id="TariffShort"
         component={TariffShort}
         durationInFrames={720}

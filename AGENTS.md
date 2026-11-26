@@ -2,6 +2,7 @@
 
 Scope: Mythrow/GlyphWire only. Read README.md, docs/DECISIONS.md, docs/PROJECT_STATUS.md and docs/PRODUCTION.md before changing or producing anything. DECISIONS.md is the sole authority for owner-approved creative and editorial decisions; do not treat implementation proposals as approvals. Bharat Mode is a read-only reference, not a dependency.
 
+- Preserve the exact fixed frame and continuous progress bar; see the 2026-11-27 visual refinement decision. Borrow motion craft only, not Bharat Mode brand chrome.
 - Preserve the Signal G mark, Signal palette, approved fonts, 1080 × 1920 frame and 32px minimum text size. Use main topics only, one animated hero per topic, opening headline that shrinks and persists, staggered letter reveal. Keep the approved 30fps implementation until a different frame rate is approved.
 - Preserve Kokoro af_jessica and approved 128 BPM music; no paid voice service or substitute voice without owner approval.
 - Keep news short: normally 15–30 seconds, maximum approximately 60 seconds. Do not invent facts, numbers, sources, dates, country flags, narration timings or approvals. The owner's own reported stories do not require external fact-checking; the policy for other stories remains open in DECISIONS.md.

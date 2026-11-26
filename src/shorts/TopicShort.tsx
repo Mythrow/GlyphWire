@@ -6,6 +6,7 @@ import { fontFamily } from "../brand/fonts";
 import { palette, sizes, minTextPx } from "../brand/tokens";
 import { LetterReveal } from "./LetterReveal";
 import { Hero } from "./Hero";
+import { OriginalHero } from "./OriginalHero";
 import type { TopicShortProps } from "./topicTypes";
 
 export const TopicShort: React.FC<TopicShortProps> = (props) => {
@@ -19,7 +20,12 @@ export const TopicShort: React.FC<TopicShortProps> = (props) => {
   const topicIndex = topics.reduce((acc, tp, i) => (f >= tp.startFrame ? i : acc), -1);
   const topic = topics[topicIndex];
   const topicT = topic ? f - topic.startFrame : 0;
-  const progress = Math.min(1, f / Math.max(1, durationInFrames - 1));
+  const original = props.heroVersion === "original";
+  const HeroComponent = original ? OriginalHero : Hero;
+  const nextStart = topics[topicIndex + 1]?.startFrame;
+  // Only the hero dissolves; fixed chrome and the original letter reveal stay unchanged.
+  const heroOpacity = original || nextStart === undefined ? 1 : 1 - enter(f, nextStart - 8, 8);
+  const progress = f / durationInFrames;
 
   return (
     <AbsoluteFill style={{ background: palette.background, padding: 96, boxSizing: "border-box" }}>
@@ -69,8 +75,8 @@ export const TopicShort: React.FC<TopicShortProps> = (props) => {
       ) : null}
 
       {topic ? (
-        <div style={{ position: "absolute", top: 860, left: 0, right: 0, display: "flex", justifyContent: "center" }}>
-          <Hero key={topicIndex} spec={topic.hero} t={topicT} width={820} />
+        <div style={{ position: "absolute", top: 860, left: 0, right: 0, display: "flex", justifyContent: "center", opacity: heroOpacity }}>
+          <HeroComponent key={topicIndex} spec={topic.hero} t={topicT} width={820} />
         </div>
       ) : null}
 

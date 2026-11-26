@@ -14,6 +14,7 @@ export type TopicShortProps = {
   durationSeconds: number;
   timingStatus: "provisional" | "aligned";
   topics: Topic[];
+  heroVersion?: "original" | "enhanced";
   audioPath?: string;
   alignmentSha256?: string;
 };
