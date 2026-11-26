@@ -121,3 +121,6 @@ These are not decided. Each needs an owner decision before work depends on it.
 - **Vertical format:** confirm 9:16 as the standard for all Shorts.
 - **Ivory:** the owner chose #F7F8F2 for text. Whether it is clear of other brands' colors is not checked.
 - **Visual module refinement:** final artwork, map detail/dataset/boundary handling, precise reading/hold times, subtitle policy and further owner questions. Supported variants are approved above; production render approval remains separate.
+
+## Motion quality gate (owner feedback, 2026-11-27)
+Context-driven glyphs and adaptive layouts must retain the constructive motion quality of the earlier tariff prototype. Every module needs a staged construction, meaningful development, readable sustain, semantically motivated transition and settled resolution. Draw paths progressively, stagger independent parts, retain shared objects across beats, and use eased repositioning or focus changes rather than replacing entire scenes. Avoid decorative motion, abrupt swaps and overlapping readable headings. Compare against the earlier tariff preview and the same-story baseline before approving a new treatment. Silent proofs are not production renders; final cues must follow actual narration.

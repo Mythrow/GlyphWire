@@ -44,3 +44,6 @@ Selection guidance: text-led quotes emphasize the statement, portrait-led quotes
 
 ## Showcase
 A silent, non-news visual review reel uses explicitly fictional/demonstration text and numbers, not real claims. Each sample isolates a repeatable module; it is not a news story. The map variant reel uses geographic example locations only. The showcase is separate from published content and does not enter the news registry. Supported variants are approved; review specific artwork and test production modules in Remotion before release. Existing tariff compositions remain reference previews.
+
+## Motion quality gate (owner feedback, 2026-11-27)
+Context-driven glyphs and adaptive layouts must retain the constructive motion quality of the earlier tariff prototype. Every module needs a staged construction, meaningful development, readable sustain, semantically motivated transition and settled resolution. Draw paths progressively, stagger independent parts, retain shared objects across beats, and use eased repositioning or focus changes rather than replacing entire scenes. Avoid decorative motion, abrupt swaps and overlapping readable headings. Compare against the earlier tariff preview and the same-story baseline before approving a new treatment. Silent proofs are not production renders; final cues must follow actual narration.
