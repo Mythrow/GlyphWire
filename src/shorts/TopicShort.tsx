@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, Audio, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Logo } from "../brand/Logo";
-import { durationFrames, enter, staggerFrames } from "../brand/motion";
+import { durationFrames, enter, staggerFrames, motionTicks } from "../brand/motion";
 import { fontFamily } from "../brand/fonts";
 import { palette, sizes, minTextPx } from "../brand/tokens";
 import { LetterReveal } from "./LetterReveal";
@@ -10,9 +10,11 @@ import { OriginalHero } from "./OriginalHero";
 import type { TopicShortProps } from "./topicTypes";
 
 export const TopicShort: React.FC<TopicShortProps> = (props) => {
-  const f = useCurrentFrame();
-  const { durationInFrames } = useVideoConfig();
-  const topics = props.topics;
+  const f = motionTicks(useCurrentFrame());
+  const { durationInFrames: outputDuration } = useVideoConfig();
+  const durationInFrames = motionTicks(outputDuration);
+  // Story cues are actual 60fps frames; existing choreography uses continuous reference ticks.
+  const topics = props.topics.map(topic => ({...topic, startFrame: motionTicks(topic.startFrame)}));
   const first = topics[0]?.startFrame ?? durationInFrames;
   const label = enter(f, 0, durationFrames.fast);
   const headline = enter(f, staggerFrames * 2, durationFrames.base);

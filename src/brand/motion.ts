@@ -1,7 +1,10 @@
 import { Easing, interpolate } from "remotion";
-import { durations, easing, staggerMs } from "./tokens";
+import { durations, easing, staggerMs, frame } from "./tokens";
 
+// Established choreography is authored in 30Hz reference ticks, sampled continuously at output fps.
 const fps = 30;
+export const motionTicks = (outputFrame: number): number => outputFrame * fps / frame.fps;
+export const outputFrames = (ticks: number): number => ticks * frame.fps / fps;
 
 // Convert a token duration in ms to frames at the composition fps.
 export const msToFrames = (ms: number): number => Math.round((ms / 1000) * fps);

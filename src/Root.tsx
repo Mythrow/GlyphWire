@@ -8,7 +8,7 @@ import { TopicShort } from "./shorts/TopicShort";
 import type { TopicShortProps } from "./shorts/topicTypes";
 import { defaultShortProps, ShortProps } from "./shorts/types";
 
-const FPS = 30;
+const FPS = frame.fps;
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -52,7 +52,7 @@ export const RemotionRoot: React.FC = () => {
         id="TariffBaseline"
         component={TopicShort}
         defaultProps={{...tariffPreview, heroVersion: "original"} as TopicShortProps}
-        durationInFrames={720}
+        durationInFrames={24 * FPS}
         fps={FPS}
         width={frame.width}
         height={frame.height}
@@ -60,7 +60,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="TariffShort"
         component={TariffShort}
-        durationInFrames={720}
+        durationInFrames={24 * FPS}
         fps={FPS}
         width={frame.width}
         height={frame.height}

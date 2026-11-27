@@ -8,7 +8,7 @@ test("current repository", () => assert.equal(validateRepository(), true));
 test("valid provisional story", () => assert.equal(validateStory(story()), true));
 test("reject repeated or out-of-range timings", () => {
   const s=story(); s.topics[1].startFrame=s.topics[0].startFrame; assert.throws(()=>validateStory(s), /ordered/);
-  s.topics[1].startFrame=999; assert.throws(()=>validateStory(s), /ordered/);
+  s.topics[1].startFrame=1440; assert.throws(()=>validateStory(s), /ordered/);
 });
 test("reject unsupported flags", () => {
   const s=story(); s.topics[0].hero.partners[0]="ZZ"; assert.throws(()=>validateStory(s), /flags/);
@@ -25,3 +25,5 @@ test("reject unapproved release", () => {
 test("reject unsafe audio path", () => {
   const s=story(); s.audioPath="private/../voice.wav"; assert.throws(()=>validateStory(s), /private relative/);
 });
+
+test("60fps cues preserve 24-second tariff timing",()=>{const s=story();assert.deepEqual(s.topics.map(t=>t.startFrame),[270,540,810,990]);assert.deepEqual(s.topics.map(t=>t.startFrame/60),[4.5,9,13.5,16.5]);});

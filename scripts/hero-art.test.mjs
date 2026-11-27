@@ -11,10 +11,10 @@ test("frame-driven reveal clamps and increases",()=>{
 });
 test("every hero frame produces deterministic finite vector geometry",()=>{
   for(let i=0;i<story.topics.length;i++){
-    const topic=story.topics[i],end=story.topics[i+1]?.startFrame??720;
+    const topic=story.topics[i],end=story.topics[i+1]?.startFrame??story.durationSeconds*60;
     for(let f=topic.startFrame;f<end;f++){
-      const svg=heroArt(topic.hero,f-topic.startFrame,palette,flags);
-      assert.equal(svg,heroArt(topic.hero,f-topic.startFrame,palette,flags));
+      const svg=heroArt(topic.hero,(f-topic.startFrame)/2,palette,flags);
+      assert.equal(svg,heroArt(topic.hero,(f-topic.startFrame)/2,palette,flags));
       assert.ok(svg.length>0);assert.doesNotMatch(svg,/NaN|Infinity|undefined|<text|<script/i);
     }
   }

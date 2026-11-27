@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 import { Logo } from "../brand/Logo";
-import { durationFrames, enter, staggerFrames } from "../brand/motion";
+import { durationFrames, enter, staggerFrames, motionTicks } from "../brand/motion";
 import { fontFamily } from "../brand/fonts";
 import { palette, sizes, minTextPx } from "../brand/tokens";
 import type { ShortProps } from "./types";
@@ -11,8 +11,9 @@ import { StoryGlyph } from "./Glyphs";
 // Motion: label fades in, headline rises, logo draws, lower third slides up,
 // progress bar fills across the whole video.
 export const ShortTemplate: React.FC<ShortProps> = (props) => {
-  const f = useCurrentFrame();
-  const { durationInFrames } = useVideoConfig();
+  const f = motionTicks(useCurrentFrame());
+  const { durationInFrames: outputDuration } = useVideoConfig();
+  const durationInFrames = motionTicks(outputDuration);
   const logoProgress = enter(f, 0, durationFrames.slow);
   const label = enter(f, 0, durationFrames.fast);
   const headline = enter(f, staggerFrames * 2, durationFrames.base);

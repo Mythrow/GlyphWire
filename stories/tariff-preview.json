@@ -6,7 +6,7 @@
   "topics": [
     {
       "text": "14+ trading partners",
-      "startFrame": 135,
+      "startFrame": 270,
       "hero": {
         "kind": "partner-hub",
         "center": "US",
@@ -29,21 +29,21 @@
     },
     {
       "text": "Section 301",
-      "startFrame": 270,
+      "startFrame": 540,
       "hero": {
         "kind": "radar"
       }
     },
     {
       "text": "Deal-based rates",
-      "startFrame": 405,
+      "startFrame": 810,
       "hero": {
         "kind": "rate-dial"
       }
     },
     {
       "text": "US–China tension",
-      "startFrame": 495,
+      "startFrame": 990,
       "hero": {
         "kind": "connection",
         "left": "US",

@@ -1,15 +1,15 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { Logo } from "./Logo";
-import { durationFrames, enter, staggerFrames } from "./motion";
+import { durationFrames, enter, staggerFrames, motionTicks, outputFrames } from "./motion";
 import { fontFamily } from "./fonts";
 import { palette, sizes, minTextPx } from "./tokens";
 
-export const TOTAL_FRAMES = 150;
+export const TOTAL_FRAMES = outputFrames(150);
 
 // Brand check on a Short frame: tokens, type, logo and motion together.
 export const BrandPreview: React.FC = () => {
-  const f = useCurrentFrame();
+  const f = motionTicks(useCurrentFrame());
   const logoProgress = enter(f, 0, durationFrames.slow);
   const label = enter(f, 0, durationFrames.fast);
   const headline = enter(f, staggerFrames * 2, durationFrames.base);
@@ -97,7 +97,7 @@ export const BrandPreview: React.FC = () => {
           borderRadius: 4,
         }}
       >
-        <div style={{ width: `${(f / TOTAL_FRAMES) * 100}%`, height: 8, background: palette.primary, borderRadius: 4 }} />
+        <div style={{ width: `${(f / motionTicks(TOTAL_FRAMES)) * 100}%`, height: 8, background: palette.primary, borderRadius: 4 }} />
       </div>
     </AbsoluteFill>
   );

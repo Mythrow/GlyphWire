@@ -16,7 +16,7 @@ export function validateStory(s) {
   let previous = 0;
   for (const t of s.topics) {
     assert(nonempty(t.text), "topic text required");
-    assert(Number.isInteger(t.startFrame) && t.startFrame > previous && t.startFrame < Math.round(s.durationSeconds * 30), "topic frames must be ordered and in range");
+    assert(Number.isInteger(t.startFrame) && t.startFrame > previous && t.startFrame < Math.round(s.durationSeconds * read("brand/tokens.json").frame.fps), "topic frames must be ordered and in range");
     previous = t.startFrame;
     const h = t.hero;
     assert(h && kinds.has(h.kind), "unsupported hero kind");
@@ -58,7 +58,7 @@ export function validateRegistry(reg, load = read) {
 }
 export function validateRepository() {
   const tokens = read("brand/tokens.json");
-  assert(tokens.frame.width === 1080 && tokens.frame.height === 1920 && tokens.typography.sizes1080.minimum >= 32, "frame/type mismatch");
+  assert(tokens.frame.width === 1080 && tokens.frame.height === 1920 && tokens.frame.fps === 60 && tokens.typography.sizes1080.minimum >= 32, "frame/type mismatch");
   assert(tokens.palette.primary === "#A3E635" && tokens.palette.secondary === "#38BDF8" && tokens.palette.alert === "#FF625C", "approved colors changed");
   const audio = read("config/audio.json");
   assert(audio.voice.voice === "af_jessica" && audio.music.bpm === 128, "approved audio identity changed");
