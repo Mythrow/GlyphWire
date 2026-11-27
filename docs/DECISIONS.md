@@ -135,6 +135,10 @@ Choose variants according to the story, not a fixed sequence. Approval applies t
 - Dedicated Work chat handles Kokoro narration only; regular chat supplies scene scripts, synchronizes visuals, mixes music and renders. Retain af_jessica, American English, speed 1.0; no paid services.
 - Reuse Bharat Mode's scene-based handoff and evidence/QA process, not its narrator or brand. Require per-scene 24 kHz mono PCM16 WAVs, genuine WhisperX acoustic alignment tied to final audio SHA-256, independent ASR and pronunciation review, measured durations and one ZIP. See AUDIO_HANDOFF.md. No fabricated timings, rewritten scripts or unverified passes.
 
+### Audio listening gate and narrator review (owner directed 2026-11-27)
+- Every audio job must supply a private playable HTML preview with actual audio and exact content for owner review before final delivery; stop for explicit approval. See AUDIO_HANDOFF.md for details.
+- Owner dislikes the current Kokoro output and requests auditions of female voices using the Qwen3-TTS VoiceDesign → Base workflow used by Bharat Mode. Hold final narration until owner selection and repeatability review. No new narrator identity is approved yet; preserve existing config as the historical/current approved configuration until explicitly superseded.
+
 ## Open
 These are not decided. Each needs an owner decision before work depends on it.
 

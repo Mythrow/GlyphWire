@@ -36,3 +36,6 @@ Owner requested smaller, matching date typography in the V8 court timeline. The 
 
 ## Audio-only Work handoff (2026-11-27)
 Owner reports dedicated Work Kokoro environment ready; story-specific synthesis, WhisperX availability and independent QA remain unverified here. AUDIO_HANDOFF.md defines the scene-based ZIP and evidence requirements. Regular chat retains timing/mix/render duties. Approved music is available in the owner's Library as news-bed-128bpm.mp3; verify bytes per use. This documentation update does not implement a native aligner/validator, certify audio rights, approve a final mix or publish a story.
+
+## Narrator review and HTML listening gate (2026-11-27)
+Owner reports dissatisfaction with the Kokoro narration and absence of HTML review. Mandatory playable HTML review before final audio handoff is now documented. Female Qwen3-TTS auditions requested; no new voice selected, no Qwen setup or samples verified in this update. Final narration on hold pending selection and repeatability approval. Kokoro configuration unchanged; Bharat Mode repository/reference untouched.
