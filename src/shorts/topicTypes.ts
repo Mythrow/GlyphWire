@@ -7,6 +7,7 @@ export type HeroSpec =
   | { kind: "connection"; left: FlagCode; right: FlagCode }
   | { kind: "trade" | "hub" };
 
+// startFrame is an actual output frame at brand/tokens.json frame.fps (60).
 export type Topic = { text: string; startFrame: number; hero: HeroSpec };
 export type TopicShortProps = {
   category: string;

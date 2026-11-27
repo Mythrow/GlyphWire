@@ -24,7 +24,7 @@ Last updated: 2026-11-27.
 - **Typefaces:** Space Grotesk for headlines, Inter for body, JetBrains Mono for labels. The smallest text is 32px on a 1080 px frame.
 - **Motion:** durations, easing and stagger in `brand/tokens.json`. No bounce and no spin.
 - **Logo:** "Signal G". A lime ring G with a solid source node and a short bar, plus three thin fading lime arcs. Lime only, no cyan in the mark. Files are in `brand/logo/`.
-- **Frame:** 9:16, 1080 × 1920 px.
+- **Frame:** 9:16, native 1080 × 1920 px, 60 FPS for all previews and final videos (owner approved 2026-11-27).
 
 ### Topics
 - Latest News
@@ -81,7 +81,7 @@ Last updated: 2026-11-27.
 - Use Bharat Mode as a read-only reference for animation craft, scene construction, independent layers, constructive motion, narration-led cues, transitions and visual QA, not for brand styling.
 - Preserve the existing GlyphWire frame: Signal G at top right (120px, top/right 96px), category top left, opening headline and shrink, original typography, dark Ink background, original topic/hero positioning for legacy previews, continuous lime progress bar (8px, 96px gutters and bottom), and existing margins.
 - No segmented progress, relocated logo, additional captions, changed palette or new typography without owner approval. Keep current narration and music decisions.
-- Prototype refined hero motion within the existing frame. Keep 30fps until a frame-rate change is explicitly approved. Visual prototype approval remains separate from the general direction.
+- Prototype refined hero motion within the existing frame. 30fps was the original prototype standard; superseded by the approved 60fps standard below. Visual prototype approval remains separate from the general direction.
 
 ### Visual feedback (2026-11-27)
 - Correct optical alignment of top-left BREAKING label with the top-right Signal G; preserve logo location and size.
@@ -105,6 +105,10 @@ Last updated: 2026-11-27.
 - Weather: support both minimal animated condition icons and detailed atmospheric visuals. Distinguish observations from forecasts and use verified data.
 
 Choose variants according to the story, not a fixed sequence. Approval applies to supported capabilities, not final artwork, exact map styling, boundary policy or production implementation. Keep fixed brand chrome and source attribution in the description only.
+
+### Render quality (owner approved 2026-11-27)
+- Native 1080 × 1920 at 60fps for previews and final videos; no upscaling or frame interpolation. Keep elapsed-time motion consistent with the approved original animation, sampling at 60fps.
+- Vector graphics where possible, original approved fonts, high-quality H.264 (12–20 Mbps reference target; quality-based encoding may vary with scene complexity). Lossless frame capture for native Remotion. Verify resolution, frame count, decoding and visible fine detail. Standalone fallback renders must be identified as such.
 
 ## Open
 These are not decided. Each needs an owner decision before work depends on it.

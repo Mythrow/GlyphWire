@@ -21,3 +21,6 @@ python scripts/mix_audio.py --voice public/private/narration.wav --out public/pr
 Replace SECONDS with the verified end of the last complete bar; gains are explicit linear values, not approved defaults. The mix script uses the existing master and repeats its last 1.875-second bar after playing the introduction. It does not infer musical boundaries. Verify clipping, loudness and mix on mobile. Set audioPath in a private render-props JSON to private/mix.wav (relative to public/); keep it and the actual media out of Git. A missing audioPath means visual-only preview.
 
 The tooling does not yet run a forced aligner, perform full rights checks, or automatically generate a release. Owner-approved final video must include verified audio and sources; the current branch makes no approval or publishing claim.
+
+## Render quality gate
+All previews and production videos: native 1080 × 1920 at 60fps. Story cue frames are at 60fps; legacy choreography uses continuous 30Hz reference ticks to preserve motion duration. Capture PNG frames; encode high-quality H.264 (CRF 14 default, 12–20 Mbps reference rather than padding simple content). Inspect detail, dimensions, frame count, full decode and mobile playback. Reject upscaled or interpolated previews. Native Remotion and approved fonts remain the production target.

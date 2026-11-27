@@ -3,7 +3,7 @@
 Authority: DECISIONS.md. Owner approved overall direction on 2026-11-27; individual showcase treatments remain candidates.
 
 ## Fixed / persistent / adaptive
-- Fixed: original 1080×1920 Ink frame, top-right Signal G at 96px/120px, aligned category at left, approved fonts/palette, continuous bottom progress bar, original gutters; 30fps for now.
+- Fixed: original 1080×1920 Ink frame, top-right Signal G at 96px/120px, aligned category at left, approved fonts/palette, continuous bottom progress bar, original gutters; native 60fps (all previews and final videos).
 - Persistent: opening two-line editorial headline reveals with the hero and shrinks; stays legible throughout.
 - Adaptive: central content can be a number, quote, image, map, chart, timeline, mechanism or combination. Heading is optional; avoid duplicated facts and arbitrary slide boxes. One dominant message, with subordinate visual cues as needed.
 - Source links and attribution belong in the description only. Speaker names/roles, units, dates, locations, and claim qualifiers are factual context rather than citations. No separate outro.
