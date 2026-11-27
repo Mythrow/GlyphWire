@@ -110,6 +110,9 @@ Choose variants according to the story, not a fixed sequence. Approval applies t
 - Native 1080 × 1920 at 60fps for previews and final videos; no upscaling or frame interpolation. Keep elapsed-time motion consistent with the approved original animation, sampling at 60fps.
 - Vector graphics where possible, original approved fonts, high-quality H.264 (12–20 Mbps reference target; quality-based encoding may vary with scene complexity). Lossless frame capture for native Remotion. Verify resolution, frame count, decoding and visible fine detail. Standalone fallback renders must be identified as such.
 
+### Editorial alignment (owner confirmed 2026-11-27)
+- Center the opening headline and the persistent reduced headline on the same horizontal centreline throughout scaling. Center supporting paragraphs, topic headings and their labels by default; align related local labels to their own glyph or timeline anchor. Keep the existing top-left category and top-right logo. Historical baseline retained for comparison.
+
 ## Open
 These are not decided. Each needs an owner decision before work depends on it.
 

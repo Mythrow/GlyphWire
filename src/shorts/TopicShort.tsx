@@ -48,7 +48,8 @@ export const TopicShort: React.FC<TopicShortProps> = (props) => {
           letterSpacing: original ? 0 : "-0.025em",
           opacity: headline,
           transform: `translateY(${(1 - headline) * 24}px) scale(${1 - 0.42 * shrink})`,
-          transformOrigin: "left top",
+          // Keep the editorial headline on the vertical centreline throughout its scale animation.
+          transformOrigin: original ? "left top" : "center top",
         }}
       >
         {!original && props.headlineLines ? <>

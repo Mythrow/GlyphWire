@@ -33,3 +33,5 @@ test("fixed brand geometry remains unchanged",()=>{
 });
 
 test("circular art is not clipped or stretched",()=>{const svg=heroArt(story.topics[0].hero,120,palette,flags);assert.doesNotMatch(svg,/clip-path|<clipPath|xMidYMid slice/);assert.ok(svg.includes('xMidYMid meet'));});
+
+test("enhanced headline scales around its centreline",()=>{const src=readFileSync(new URL("../src/shorts/TopicShort.tsx",import.meta.url),"utf8");assert.ok(src.includes('transformOrigin: original ? "left top" : "center top"'));assert.ok(src.includes('textAlign: original ? "left" : "center"'));});

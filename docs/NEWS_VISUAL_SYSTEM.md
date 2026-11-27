@@ -47,3 +47,6 @@ A silent, non-news visual review reel uses explicitly fictional/demonstration te
 
 ## Motion quality gate (owner feedback, 2026-11-27)
 Context-driven glyphs and adaptive layouts must retain the constructive motion quality of the earlier tariff prototype. Every module needs a staged construction, meaningful development, readable sustain, semantically motivated transition and settled resolution. Draw paths progressively, stagger independent parts, retain shared objects across beats, and use eased repositioning or focus changes rather than replacing entire scenes. Avoid decorative motion, abrupt swaps and overlapping readable headings. Compare against the earlier tariff preview and the same-story baseline before approving a new treatment. Silent proofs are not production renders; final cues must follow actual narration.
+
+## Editorial alignment
+Center headline lines and their scale origin on the 540px centreline of the 1080px frame. Center supporting paragraph lines, topic headings and associated section labels. Preserve stable line breaks and character positions during reveal. Local data labels align to their graphic anchors; keep category and logo in their fixed corners. Historical baseline remains unchanged.
