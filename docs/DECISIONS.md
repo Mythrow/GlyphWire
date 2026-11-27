@@ -113,6 +113,10 @@ Choose variants according to the story, not a fixed sequence. Approval applies t
 ### Editorial alignment (owner confirmed 2026-11-27)
 - Center the opening headline and the persistent reduced headline on the same horizontal centreline throughout scaling. Center supporting paragraphs, topic headings and their labels by default; align related local labels to their own glyph or timeline anchor. Keep the existing top-left category and top-right logo. Historical baseline retained for comparison.
 
+### Glyph transitions (owner confirmed 2026-11-27)
+- Default to constructive entrances and corresponding deconstructive exits: progressive drawing/retraction, staged assembly/disassembly, directional reveal/withdrawal, and staggered components.
+- Preserve shared objects and prefer meaningful transformations or eased repositioning across related beats. Use a quiet dissolve when visuals are genuinely unrelated or removal by construction would distract. Keep the final news beat settled rather than forcing an outro. Retain centered typography and existing brand chrome.
+
 ## Open
 These are not decided. Each needs an owner decision before work depends on it.
 

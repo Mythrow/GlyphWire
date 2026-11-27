@@ -24,3 +24,5 @@ Owner selected both quotation, number, photography and weather variants, and all
 
 ## Native 60fps migration (2026-11-27)
 Owner approved 1080 × 1920 at 60fps for all previews and final videos. Review branch migrates compositions and actual story cue frames, keeps existing motion at continuous reference ticks, updates validation and sets PNG intermediate captures/high-quality CRF. Native Remotion build and visual regression checks still pending; standalone preview is separately rendered and is not proof of native Remotion success.
+
+Owner approved constructive entrances and deconstructive exits, with meaningful transformations and shared object continuity preferred. V7 standalone news review tests staged bracket/silhouette removal, line retraction, and a recording-indicator callout returning to the glasses before the court graphic constructs. Native adaptive Remotion module implementation and validation remain outstanding; this is a documentation update, not a claim of production implementation.

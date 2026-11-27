@@ -50,3 +50,6 @@ Context-driven glyphs and adaptive layouts must retain the constructive motion q
 
 ## Editorial alignment
 Center headline lines and their scale origin on the 540px centreline of the 1080px frame. Center supporting paragraph lines, topic headings and associated section labels. Preserve stable line breaks and character positions during reveal. Local data labels align to their graphic anchors; keep category and logo in their fixed corners. Historical baseline remains unchanged.
+
+## Constructive/deconstructive glyph motion (approved)
+Choose an entrance and exit together for each object. Paths may retract toward their origin, layered parts disassemble in reverse order, or explanatory details return to their source object. Shared objects may persist and move or morph when the story warrants it. Use opacity to support geometry, not as the default exit for an entire related scene. Quiet dissolves remain available when continuity is not meaningful. Preserve readable dwell time and narration-led timing; do not force every object to leave at the end.
