@@ -139,6 +139,8 @@ Choose variants according to the story, not a fixed sequence. Approval applies t
 - Every audio job must supply a private playable HTML preview with actual audio and exact content for owner review before final delivery; stop for explicit approval. See AUDIO_HANDOFF.md for details.
 - Owner dislikes the current Kokoro output and requests auditions of female voices using the Qwen3-TTS VoiceDesign → Base workflow used by Bharat Mode. Hold final narration until owner selection and repeatability review. No new narrator identity is approved yet; preserve existing config as the historical/current approved configuration until explicitly superseded.
 
+- Owner confirmed staged auditions: first compare female voice identities in the same normal neutral speaking tone, then compare delivery styles on selected voices, then verify reference-based repeatability. Present playable HTML and obtain approval at each stage. No new voice is approved yet.
+
 ## Open
 These are not decided. Each needs an owner decision before work depends on it.
 

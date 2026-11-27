@@ -39,3 +39,5 @@ Owner reports dedicated Work Kokoro environment ready; story-specific synthesis,
 
 ## Narrator review and HTML listening gate (2026-11-27)
 Owner reports dissatisfaction with the Kokoro narration and absence of HTML review. Mandatory playable HTML review before final audio handoff is now documented. Female Qwen3-TTS auditions requested; no new voice selected, no Qwen setup or samples verified in this update. Final narration on hold pending selection and repeatability approval. Kokoro configuration unchanged; Bharat Mode repository/reference untouched.
+
+Owner refined the audition sequence: compare distinct female identities in a shared normal speaking tone first, then test delivery styles on shortlisted voices. The audio handoff documents this staged approval; actual audition generation and selection are still pending.
