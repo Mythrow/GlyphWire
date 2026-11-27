@@ -30,3 +30,6 @@ Owner approved constructive entrances and deconstructive exits, with meaningful 
 Owner accepted V7 centered typography and constructive/deconstructive glyph motion and authorized adaptive supporting information treatments and optical header alignment. V8 standalone proof retains V7 glyph geometry, demonstrates takeaway, attributed paraphrase and key-data hierarchy; no invented direct quote. Native module implementation and font/Remotion validation remain outstanding.
 
 Owner approved V8 visual direction and requested narration/music for the same preview. Visuals approved for this review, not publication. Actual approved voice synthesis, soundtrack mixing, timing and audio QA must be verified before reporting completion.
+
+## V9 timeline refinement (2026-11-27)
+Owner requested smaller, matching date typography in the V8 court timeline. The permanent paired-date rule is recorded in DECISIONS.md and NEWS_VISUAL_SYSTEM.md. A standalone edited V9 preview was shared in chat; it is not a native Remotion render or an approved final design. Native timeline implementation and visual QA remain pending.

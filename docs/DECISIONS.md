@@ -128,6 +128,9 @@ Choose variants according to the story, not a fixed sequence. Approval applies t
 - Owner accepted the V8 approach: optical alignment of category text to Signal G, adaptive supporting information hierarchy, centered text with selective semantic emphasis, explicitly attributed unquoted paraphrases, distinct date treatments, and reverse-stagger text exits, preserving the V7 glyph choreography. Retain this direction.
 - Owner authorized adding approved Kokoro af_jessica narration and the existing 128 BPM music bed to the same visual preview. This is not publication approval; direct quotation module demonstration, actual audio timing/mix review and native Remotion validation remain separate.
 
+### Paired timeline dates (owner feedback, 2026-11-27)
+- Comparable dates on a timeline must use matching, compact typography, weight and baseline, with equally styled secondary labels and local anchor alignment. Make both dates smaller than the oversized V8 treatment; use semantic colour and wording for status rather than unequal scale. Preserve the brand's 32px minimum and existing motion. See NEWS_VISUAL_SYSTEM.md.
+
 ## Open
 These are not decided. Each needs an owner decision before work depends on it.
 
