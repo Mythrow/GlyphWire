@@ -124,6 +124,10 @@ Choose variants according to the story, not a fixed sequence. Approval applies t
 - Direct quotes must be verified verbatim; use a distinct quotation design, independent speaker identity/role reveal, optional portrait, original letter animation, and reverse stagger or directional withdrawal. Paraphrases must remain unquoted and explicitly attributed. Sources remain in description only.
 - Give dates and numbers their own visual hierarchy. Supporting information may move relative to the glyph as the story requires; preserve readability and the fixed brand frame.
 
+### V8 visual review (owner approved 2026-11-27)
+- Owner accepted the V8 approach: optical alignment of category text to Signal G, adaptive supporting information hierarchy, centered text with selective semantic emphasis, explicitly attributed unquoted paraphrases, distinct date treatments, and reverse-stagger text exits, preserving the V7 glyph choreography. Retain this direction.
+- Owner authorized adding approved Kokoro af_jessica narration and the existing 128 BPM music bed to the same visual preview. This is not publication approval; direct quotation module demonstration, actual audio timing/mix review and native Remotion validation remain separate.
+
 ## Open
 These are not decided. Each needs an owner decision before work depends on it.
 
