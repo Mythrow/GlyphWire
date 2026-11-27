@@ -117,6 +117,13 @@ Choose variants according to the story, not a fixed sequence. Approval applies t
 - Default to constructive entrances and corresponding deconstructive exits: progressive drawing/retraction, staged assembly/disassembly, directional reveal/withdrawal, and staggered components.
 - Preserve shared objects and prefer meaningful transformations or eased repositioning across related beats. Use a quiet dissolve when visuals are genuinely unrelated or removal by construction would distract. Keep the final news beat settled rather than forcing an outro. Retain centered typography and existing brand chrome.
 
+### V7 visual review and supporting information (owner approved 2026-11-27)
+- V7 centered text and constructive glyph entrances/deconstructive exits accepted by owner as visual direction. Preserve them in future previews. This approval is not publication approval or a native Remotion test.
+- Header category and Signal G main ring must share an optical vertical centerline; retain logo position and size. Calibrate using actual visible glyph bounds and the selected font, not container alignment alone.
+- Supporting information is adaptive rather than a mandatory bottom footer: key takeaway, verified direct quotation, attributed paraphrase, or key data. Center supporting text by default; local labels align to the corresponding glyph. Prefer 6–12 words and 1–2 lines, Inter 44–52px primary, 32–36px secondary. Highlight sparingly with semantic brand colors. Omit redundant text.
+- Direct quotes must be verified verbatim; use a distinct quotation design, independent speaker identity/role reveal, optional portrait, original letter animation, and reverse stagger or directional withdrawal. Paraphrases must remain unquoted and explicitly attributed. Sources remain in description only.
+- Give dates and numbers their own visual hierarchy. Supporting information may move relative to the glyph as the story requires; preserve readability and the fixed brand frame.
+
 ## Open
 These are not decided. Each needs an owner decision before work depends on it.
 

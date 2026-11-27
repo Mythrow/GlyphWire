@@ -13,3 +13,5 @@ Scope: Mythrow/GlyphWire only. Read README.md, docs/DECISIONS.md, docs/PROJECT_S
 - Update the current-status page and registry only to reflect actual verified progress; approved decisions go in DECISIONS.md only after owner approval. No changes to Bharat Mode.
 
 - Latest visual feedback: align category text vertically with the existing logo; use stronger editorial headline and native circular flags, keeping remaining brand chrome unchanged. See DECISIONS.md.
+
+- Preserve owner-approved V7 centered text and constructive/deconstructive glyph motion. Align settled category ink bounds optically to the Signal G ring center. Use adaptive supporting text treatments (takeaway, attributed paraphrase, verified direct quote, or key data), not a mandatory footer; follow NEWS_VISUAL_SYSTEM.md. Do not style paraphrases as direct quotes.
