@@ -2,7 +2,7 @@
 
 A YouTube Shorts channel: quick, informative, modern-futuristic motion graphics about news, built in Remotion.
 
-Start here: [approved decisions](docs/DECISIONS.md) → [current status](docs/PROJECT_STATUS.md) → [production workflow](docs/PRODUCTION.md) → [news visual system](docs/NEWS_VISUAL_SYSTEM.md). Agents also read [AGENTS.md](AGENTS.md).
+Start here: [approved decisions](docs/DECISIONS.md) → [current status](docs/PROJECT_STATUS.md) → [production workflow](docs/PRODUCTION.md) → [news visual system](docs/NEWS_VISUAL_SYSTEM.md). Audio production: [narration and alignment handoff](docs/AUDIO_HANDOFF.md). Agents also read [AGENTS.md](AGENTS.md).
 
 ## Quick start
 ```sh

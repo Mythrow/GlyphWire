@@ -131,6 +131,10 @@ Choose variants according to the story, not a fixed sequence. Approval applies t
 ### Paired timeline dates (owner feedback, 2026-11-27)
 - Comparable dates on a timeline must use matching, compact typography, weight and baseline, with equally styled secondary labels and local anchor alignment. Make both dates smaller than the oversized V8 treatment; use semantic colour and wording for status rather than unequal scale. Preserve the brand's 32px minimum and existing motion. See NEWS_VISUAL_SYSTEM.md.
 
+### Audio production handoff (owner directed 2026-11-27)
+- Dedicated Work chat handles Kokoro narration only; regular chat supplies scene scripts, synchronizes visuals, mixes music and renders. Retain af_jessica, American English, speed 1.0; no paid services.
+- Reuse Bharat Mode's scene-based handoff and evidence/QA process, not its narrator or brand. Require per-scene 24 kHz mono PCM16 WAVs, genuine WhisperX acoustic alignment tied to final audio SHA-256, independent ASR and pronunciation review, measured durations and one ZIP. See AUDIO_HANDOFF.md. No fabricated timings, rewritten scripts or unverified passes.
+
 ## Open
 These are not decided. Each needs an owner decision before work depends on it.
 

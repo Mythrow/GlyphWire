@@ -33,3 +33,6 @@ Owner approved V8 visual direction and requested narration/music for the same pr
 
 ## V9 timeline refinement (2026-11-27)
 Owner requested smaller, matching date typography in the V8 court timeline. The permanent paired-date rule is recorded in DECISIONS.md and NEWS_VISUAL_SYSTEM.md. A standalone edited V9 preview was shared in chat; it is not a native Remotion render or an approved final design. Native timeline implementation and visual QA remain pending.
+
+## Audio-only Work handoff (2026-11-27)
+Owner reports dedicated Work Kokoro environment ready; story-specific synthesis, WhisperX availability and independent QA remain unverified here. AUDIO_HANDOFF.md defines the scene-based ZIP and evidence requirements. Regular chat retains timing/mix/render duties. Approved music is available in the owner's Library as news-bed-128bpm.mp3; verify bytes per use. This documentation update does not implement a native aligner/validator, certify audio rights, approve a final mix or publish a story.
