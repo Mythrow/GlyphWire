@@ -26,3 +26,7 @@ The repository tooling does not yet run a forced aligner (Work must perform requ
 
 ## Render quality gate
 All previews and production videos: native 1080 × 1920 at 60fps. Story cue frames are at 60fps; legacy choreography uses continuous 30Hz reference ticks to preserve motion duration. Capture PNG frames; encode high-quality H.264 (CRF 14 default, 12–20 Mbps reference rather than padding simple content). Inspect detail, dimensions, frame count, full decode and mobile playback. Reject upscaled or interpolated previews. Native Remotion and approved fonts remain the production target.
+
+## Typography preflight and QA
+Before rendering, resolve actual approved font files (Space Grotesk, Inter, JetBrains Mono) at the intended weights; record source/revision, file identity/hash, coverage and renderer loading evidence. Verify every text role against the approved family and inspect output frames; do not silently use fallback fonts. If an inherited flattened asset cannot be independently verified or a font is unavailable, identify the limitation and mark the result as review-only, not publication-ready.
+Keep the approved role hierarchy, 32px minimum, headline centering and paired-date consistency. Changes to the typography system beyond existing approved rules remain subject to owner review. Native renderer enforcement is still to be implemented; documentation alone does not implement a test.

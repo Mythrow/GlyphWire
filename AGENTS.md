@@ -15,3 +15,5 @@ Scope: Mythrow/GlyphWire only. Read README.md, docs/DECISIONS.md, docs/PROJECT_S
 - Latest visual feedback: align category text vertically with the existing logo; use stronger editorial headline and native circular flags, keeping remaining brand chrome unchanged. See DECISIONS.md.
 
 - Preserve owner-approved V7 centered text and constructive/deconstructive glyph motion. Align settled category ink bounds optically to the Signal G ring center. Use adaptive supporting text treatments (takeaway, attributed paraphrase, verified direct quote, or key data), not a mandatory footer; follow NEWS_VISUAL_SYSTEM.md. Do not style paraphrases as direct quotes.
+
+- Typography preflight: Before rendering, resolve actual approved font files (Space Grotesk, Inter, JetBrains Mono) at the intended weights; record source/revision, file identity/hash, coverage and renderer loading evidence. Verify every text role against the approved family and inspect output frames; do not silently use fallback fonts. If an inherited flattened asset cannot be independently verified or a font is unavailable, identify the limitation and mark the result as review-only, not publication-ready.
