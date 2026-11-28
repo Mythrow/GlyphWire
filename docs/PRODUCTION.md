@@ -9,7 +9,7 @@ This is implementation guidance, not a new owner-approved editorial policy. See 
 5. Render, inspect headline wrapping, safe margins, each module's reveal, reading time, transitions and settled state, timing, audio, full decode and mobile legibility. Verify no placeholder flags or unsupported figures remain. Final owner approval and manual upload remain required.
 6. Record the approved output hash, title, description, sources and publication status. Do not promote scheduled/uploaded items to published without confirmation. Record analytics after publication at comparable ages (e.g. 24h and 7d); mark missing values null.
 
-Female Qwen3-TTS narrator audition is pending; do not finalize Kokoro or switch the approved voice configuration until owner selection and repeatability review under AUDIO_HANDOFF.md.
+The owner reaffirmed Kokoro af_jessica on 2026-11-28 after rejecting Qwen auditions. The audition-related production hold is lifted; use the original configuration in config/audio.json and retain the mandatory HTML listening approval and QA gates in AUDIO_HANDOFF.md.
 
 ## Commands
 

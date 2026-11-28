@@ -2,7 +2,7 @@
 
 This log records only what the project owner has approved in the project chat.
 Items still undecided are listed under **Open**, not as decisions.
-Last updated: 2026-11-27.
+Last updated: 2026-11-28.
 
 ## Approved decisions
 
@@ -137,9 +137,13 @@ Choose variants according to the story, not a fixed sequence. Approval applies t
 
 ### Audio listening gate and narrator review (owner directed 2026-11-27)
 - Every audio job must supply a private playable HTML preview with actual audio and exact content for owner review before final delivery; stop for explicit approval. See AUDIO_HANDOFF.md for details.
-- Owner dislikes the current Kokoro output and requests auditions of female voices using the Qwen3-TTS VoiceDesign → Base workflow used by Bharat Mode. Hold final narration until owner selection and repeatability review. No new narrator identity is approved yet; preserve existing config as the historical/current approved configuration until explicitly superseded.
+- Owner dislikes the current Kokoro output and requests auditions of female voices using the Qwen3-TTS VoiceDesign → Base workflow used by Bharat Mode. The audition-related production hold was temporary and is superseded by the 2026-11-28 decision below. No Qwen narrator identity was approved.
 
-- Owner confirmed staged auditions: first compare female voice identities in the same normal neutral speaking tone, then compare delivery styles on selected voices, then verify reference-based repeatability. Present playable HTML and obtain approval at each stage. No new voice is approved yet.
+- Historical audition method: first compare female voice identities in a shared normal speaking tone, then compare styles and test repeatability. Auditions are now closed.
+
+### Narrator reaffirmed (owner directed 2026-11-28)
+- Owner rejected the Qwen female auditions and chose to stick with the original Kokoro narrator: Kokoro-82M, af_jessica, American English (lang_code a), speed 1.0. Keep config/audio.json synthesis parameters unchanged. One narrator across Shorts; do not reopen Qwen auditions without owner authorization.
+- Lift the temporary narrator-selection hold. Resume scene-based narration with mandatory playable HTML preview and explicit owner approval, independent ASR/pronunciation QA, genuine WhisperX alignment, checksums and structured ZIP. No individual narration is approved solely by this decision.
 
 ## Open
 These are not decided. Each needs an owner decision before work depends on it.
