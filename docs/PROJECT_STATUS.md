@@ -60,3 +60,6 @@ Owner explicitly approved the entire format of `glyphwire-meta-glasses-approved-
 3. Confirm reproducible music loop/mix settings and usage rights; verify source claims and define non-owner-reported fact-check policy.
 4. Set editorial cadence, selection policy, caption/light-variant choices if desired, thumbnail and upload metadata template, publishing schedule, and analytics review. Register each real story and obtain explicit final release approval. Registry currently contains only GW-001 tariff proof; do not infer a Meta glasses release.
 5. Refine quotation, number, geography, photo and weather treatments when stories require them. Core typography/brand and 9:16 format are no longer pending decisions.
+
+## Next design review (2026-11-28)
+Owner approved skipping continuous captions and supporting a light variant. Next candidate story: Google confirms a halt to Belgian data centre construction on 28 November (AFP and Guardian coverage); geographic, genuine quotation and thumbnail treatments pending review. No story publication approval. Effective mix inferred from the approved Meta preview against original stems: approximately voice 141% (+3 dB), music 35.5% (-9 dB), ducked music 17.8% (-15 dB). These are measured estimates relative to sources, not yet owner-approved fixed production mixer settings. No rights or native render validation implied.

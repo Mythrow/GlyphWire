@@ -153,6 +153,9 @@ Use the owner-approved typography roles in brand/tokens.json (2026-11-28): Oxani
 - This is format approval, not authorization to publish the Meta glasses story, confirmation of source accuracy, music rights clearance, fixed gain settings, or proof of a native Remotion implementation. The owner separately approved the supplied Kokoro narration. Story-specific content and final publication approval remain mandatory.
 - Vertical 9:16 at native 1080 × 1920/60fps is settled. Detailed module variants and editorial/launch policies remain open as applicable.
 
+### Captions and light variant (owner directed 2026-11-28)
+Owner approved no continuous narration captions in GlyphWire videos (meaningful editorial text, exact quotations, labels and data remain). Support a light-background variant in addition to dark; exact light-theme tokens and visual treatment are subject to preview approval. Theme variation does not by itself establish YouTube monetization eligibility: each story requires original editorial substance and story-specific visuals. Do not add captions or change the approved typography/brand layout.
+
 ## Open
 These are not decided. Each needs an owner decision before work depends on it.
 
@@ -164,9 +167,9 @@ These are not decided. Each needs an owner decision before work depends on it.
   model to Haiku 5.5 at medium effort.
 - **Partner flags:** only the US, China, the EU and Japan have flags. The other partner flags await the owner's list of countries.
 - **Music level:** the mix level under narration may be adjusted after the owner listens.
-- **Dark-only or light variant:** whether some videos need a light background.
+- **Light theme:** final colour tokens and map/quote/thumbnail artwork pending review.
 - **Ivory:** the owner chose #F7F8F2 for text. Whether it is clear of other brands' colors is not checked.
-- **Visual module refinement:** final artwork, map detail/dataset/boundary handling, precise reading/hold times, subtitle policy and further owner questions. Supported variants are approved above; production render approval remains separate.
+- **Visual module refinement:** final artwork, map detail/dataset/boundary handling, precise reading/hold times and further owner questions. Supported variants are approved above; production render approval remains separate.
 
 ## Motion quality gate (owner feedback, 2026-11-27)
 Context-driven glyphs and adaptive layouts must retain the constructive motion quality of the earlier tariff prototype. Every module needs a staged construction, meaningful development, readable sustain, semantically motivated transition and settled resolution. Draw paths progressively, stagger independent parts, retain shared objects across beats, and use eased repositioning or focus changes rather than replacing entire scenes. Avoid decorative motion, abrupt swaps and overlapping readable headings. Compare against the earlier tariff preview and the same-story baseline before approving a new treatment. Silent proofs are not production renders; final cues must follow actual narration.
