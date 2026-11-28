@@ -1,0 +1,2 @@
+# Circular flags
+US, CN, JP from https://github.com/kapowaz/circle-flags at 5251c7f8306f45bc34a72636efd6aee27c1e3a6d, MIT license (see LICENSE.md). EU is a locally corrected circular variant using the upstream palette, with twelve evenly spaced upright stars (the retrieved upstream artwork had eight). The visual renderer uses inline data URIs from the same asset strings so no network is required. Unknown partner flags stay placeholders. Historical baseline retains the previous flag assets for comparison.

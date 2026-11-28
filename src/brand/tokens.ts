@@ -4,6 +4,7 @@ import tokens from "../../brand/tokens.json";
 export const palette = tokens.palette;
 export const frame = tokens.frame;
 export const sizes = tokens.typography.sizes1080;
+export const typeRoles = tokens.typography.roles;
 export const durations = tokens.motion.durationMs;
 export const easing = tokens.motion.easing;
 export const staggerMs = tokens.motion.staggerMs;

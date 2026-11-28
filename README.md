@@ -1,20 +1,29 @@
 # GlyphWire
 
-GlyphWire is a YouTube Shorts channel: quick, informative, modern-futuristic motion graphics about news, built in Remotion.
+A YouTube Shorts channel: quick, informative, modern-futuristic motion graphics about news, built in Remotion.
 
-## Brand
+Start here: [approved decisions](docs/DECISIONS.md) → [current status](docs/PROJECT_STATUS.md) → [production workflow](docs/PRODUCTION.md) → [news visual system](docs/NEWS_VISUAL_SYSTEM.md). Audio production: [narration and alignment handoff](docs/AUDIO_HANDOFF.md). Agents also read [AGENTS.md](AGENTS.md).
 
-- Tokens: `brand/tokens.json` (single source for colors, type, motion and frame size).
-- Logo: `brand/logo/` (Signal G, SVG).
-- Decisions: `docs/DECISIONS.md`.
-
-## Remotion
-
-```
+## Quick start
+```sh
 npm install
-npm start            # studio
-npm run render:preview  # renders the brand preview to out/
+npm run validate
 npm run typecheck
+npm start
+npm run render:preview
+npm run render:tariff
 ```
+The tariff render is a visual proof, not a final video. Short is the existing topic-based preview engine; future adaptive modules are described in the news visual system and await implementation/approval; LegacyShort preserves the older lower-third layout.
 
-`src/brand/` holds the brand layer: tokens, fonts, motion helpers, and the Logo component.
+## Layout
+
+- brand/: approved design tokens, logos and owner-supplied music (rights confirmation open).
+- src/brand/: typed brand layer, fonts, motion helpers and logo.
+- src/shorts/: reusable topic renderer, hero components and legacy template.
+- stories/: structured preview/story props.
+- content/: canonical registry and provenance.
+- config/: narrator and music configuration.
+- scripts/: validation and local audio tools.
+- publishing/ and analytics/: release and performance records (no invented data).
+
+Generated media and private inputs stay outside public Git. Manual owner approval and upload only.

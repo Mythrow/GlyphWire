@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 import { Logo } from "../brand/Logo";
-import { durationFrames, enter, staggerFrames } from "../brand/motion";
+import { durationFrames, enter, staggerFrames, motionTicks } from "../brand/motion";
 import { fontFamily } from "../brand/fonts";
 import { palette, sizes, minTextPx } from "../brand/tokens";
 import type { ShortProps } from "./types";
@@ -11,8 +11,9 @@ import { StoryGlyph } from "./Glyphs";
 // Motion: label fades in, headline rises, logo draws, lower third slides up,
 // progress bar fills across the whole video.
 export const ShortTemplate: React.FC<ShortProps> = (props) => {
-  const f = useCurrentFrame();
-  const { durationInFrames } = useVideoConfig();
+  const f = motionTicks(useCurrentFrame());
+  const { durationInFrames: outputDuration } = useVideoConfig();
+  const durationInFrames = motionTicks(outputDuration);
   const logoProgress = enter(f, 0, durationFrames.slow);
   const label = enter(f, 0, durationFrames.fast);
   const headline = enter(f, staggerFrames * 2, durationFrames.base);
@@ -28,7 +29,8 @@ export const ShortTemplate: React.FC<ShortProps> = (props) => {
       <div
         style={{
           fontFamily: fontFamily.label,
-          fontSize: Math.max(sizes.label, minTextPx),
+          fontSize: Math.max(sizes.header, minTextPx),
+          fontWeight: 500,
           color: palette.primary,
           letterSpacing: ".06em",
           opacity: label,
@@ -40,7 +42,7 @@ export const ShortTemplate: React.FC<ShortProps> = (props) => {
       <div
         style={{
           fontFamily: fontFamily.display,
-          fontWeight: 700,
+          fontWeight: 600,
           fontSize: sizes.headline,
           lineHeight: 1.04,
           color: palette.text,
@@ -68,7 +70,8 @@ export const ShortTemplate: React.FC<ShortProps> = (props) => {
             key={i}
             style={{
               fontFamily: fontFamily.body,
-              fontSize: 40,
+              fontSize: sizes.body,
+              fontWeight: 500,
               lineHeight: 1.25,
               color: palette.text,
               display: "flex",
@@ -77,7 +80,7 @@ export const ShortTemplate: React.FC<ShortProps> = (props) => {
               opacity: enter(f, durationFrames.slow + staggerFrames * (i + 1), durationFrames.base),
             }}
           >
-            <span style={{ fontFamily: fontFamily.label, color: palette.primary, minWidth: 48 }}>{String(i + 1).padStart(2, "0")}</span>
+            <span style={{ fontFamily: fontFamily.label, fontWeight: 600, color: palette.primary, minWidth: 48 }}>{String(i + 1).padStart(2, "0")}</span>
             <span>{fact}</span>
           </div>
         ))}
@@ -95,6 +98,7 @@ export const ShortTemplate: React.FC<ShortProps> = (props) => {
           padding: 56,
           fontFamily: fontFamily.body,
           fontSize: sizes.body,
+          fontWeight: 500,
           lineHeight: 1.35,
           color: palette.text,
           opacity: lowerOpacity,

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "GW-001",
+      "eventKey": "tariff-partners-preview",
+      "title": "US readies tariffs on 14+ trading partners",
+      "status": "preview",
+      "provenance": "unverified",
+      "sourceUrls": [],
+      "eventDate": null,
+      "storyPath": "stories/tariff-preview.json",
+      "notes": "Existing visual proof. Original source, exact narration, partner list and audio alignment are not in Git. Do not publish.",
+      "publication": {
+        "ownerApproved": false,
+        "uploadedAt": null,
+        "scheduledAt": null,
+        "publishedAt": null,
+        "youtubeUrl": null
+      }
+    }
+  ]
+}
