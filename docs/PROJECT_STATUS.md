@@ -50,3 +50,13 @@ The synchronized Meta camera glasses standalone proof inherited nonconforming he
 
 ## Typography redesign (2026-11-28)
 Owner approved Oxanium, Space Grotesk and Montserrat with the role weights/sizes in brand/tokens.json and quotation-only genuine italics. Brand tokens, font loader and existing template font references updated. Native adaptive modules and native font-loading/CI/visual QA remain pending; legacy templates do not implement every new text role. Standalone Meta glasses review preview is separately reconstructed with actual selected font outlines and existing graphics/audio; no publication approval asserted.
+
+## Creative format approved (2026-11-28)
+Owner explicitly approved the entire format of `glyphwire-meta-glasses-approved-typography-preview.mp4`. This supersedes prior pending creative-format review status. Owner-approved narration and integrated visual/audio direction establish the creative reference; no publication approval, external story verification, fixed music gains or rights clearance is inferred. The preview is a standalone reconstructed MP4, not an editable native production composition.
+
+### Next priorities
+1. Reproduce the approved format in reusable editable Remotion source, including adaptive scene modules, correct font loading, fixed-layout character reveals, reverse exits, and story-specific cue timings. Save editable source per story; avoid repeated patches to flattened MP4s.
+2. Diagnose failing GitHub validation workflows, run typecheck and native render/visual/audio QA; keep PR #9 open until validated. At review, the latest five validation runs reported failure (latest checked head 076d2341b2a585af1bd20dfd49eb2cb788bce114). Root cause not yet investigated.
+3. Confirm reproducible music loop/mix settings and usage rights; verify source claims and define non-owner-reported fact-check policy.
+4. Set editorial cadence, selection policy, caption/light-variant choices if desired, thumbnail and upload metadata template, publishing schedule, and analytics review. Register each real story and obtain explicit final release approval. Registry currently contains only GW-001 tariff proof; do not infer a Meta glasses release.
+5. Refine quotation, number, geography, photo and weather treatments when stories require them. Core typography/brand and 9:16 format are no longer pending decisions.

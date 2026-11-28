@@ -148,6 +148,11 @@ Choose variants according to the story, not a fixed sequence. Approval applies t
 ### Typography selection (owner approved 2026-11-28)
 Use the owner-approved typography roles in brand/tokens.json (2026-11-28): Oxanium 500/32px header; Space Grotesk 600/80–96px opening headline shrinking as one fixed layer to 40px; Oxanium 600/36px topic, Oxanium 500/60px topic subtext; Montserrat 500/48px supporting/bottom text; Montserrat 500/48px genuine italic only for verified direct quotations; Montserrat 500/32px upright attribution; Oxanium 600 adaptive key figures and Oxanium 500/32px secondary labels. Paired dates share font, weight, size and baseline. Preserve 32px minimum. Inter and JetBrains Mono are superseded for new production. Keep all other brand/motion rules. Use the existing semantic accent colours sparingly, preserve the font size, weight and style of highlighted text, and do not confuse paraphrase with a quote. This rule supersedes earlier family and size guidance.
 
+### Overall video format (owner approved 2026-11-28)
+- The owner approved the complete creative format demonstrated by `glyphwire-meta-glasses-approved-typography-preview.mp4` (1080 × 1920, 60fps, 22.5 seconds), including the selected typography, visual hierarchy, motion direction, existing narrator and soundtrack in context. Treat this as the design reference for new stories; do not reopen core design choices without owner direction.
+- This is format approval, not authorization to publish the Meta glasses story, confirmation of source accuracy, music rights clearance, fixed gain settings, or proof of a native Remotion implementation. The owner separately approved the supplied Kokoro narration. Story-specific content and final publication approval remain mandatory.
+- Vertical 9:16 at native 1080 × 1920/60fps is settled. Detailed module variants and editorial/launch policies remain open as applicable.
+
 ## Open
 These are not decided. Each needs an owner decision before work depends on it.
 
@@ -160,7 +165,6 @@ These are not decided. Each needs an owner decision before work depends on it.
 - **Partner flags:** only the US, China, the EU and Japan have flags. The other partner flags await the owner's list of countries.
 - **Music level:** the mix level under narration may be adjusted after the owner listens.
 - **Dark-only or light variant:** whether some videos need a light background.
-- **Vertical format:** confirm 9:16 as the standard for all Shorts.
 - **Ivory:** the owner chose #F7F8F2 for text. Whether it is clear of other brands' colors is not checked.
 - **Visual module refinement:** final artwork, map detail/dataset/boundary handling, precise reading/hold times, subtitle policy and further owner questions. Supported variants are approved above; production render approval remains separate.
 
