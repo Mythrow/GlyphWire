@@ -156,6 +156,9 @@ Use the owner-approved typography roles in brand/tokens.json (2026-11-28): Oxani
 ### Captions and light variant (owner directed 2026-11-28)
 Owner approved no continuous narration captions in GlyphWire videos (meaningful editorial text, exact quotations, labels and data remain). Support a light-background variant in addition to dark; exact light-theme tokens and visual treatment are subject to preview approval. Theme variation does not by itself establish YouTube monetization eligibility: each story requires original editorial substance and story-specific visuals. Do not add captions or change the approved typography/brand layout.
 
+### Belgium preview feedback and audio gain targets (2026-11-28)
+Owner requested music 2 dB below prior reference and 3 dB duck depth rather than 6 dB. Voice +3 dB (141.3%), music -11 dB (28.2%), ducked music -14 dB (20.0%). config/audio.json is authoritative. Rights and loop verification remain pending. Owner rejected the Belgium light preview's crude low-resolution map, box-like map mask, static logo, overly basic visuals and changed accent colours. Preserve exact Signal Lime #A3E635, Wire Cyan #38BDF8 and Alert Coral #FF625C in both themes; light uses Ivory background and Ink body text. Use high-contrast text treatment as necessary, without silently redefining the brand palette; exact treatment awaits review. Use accurate higher-detail geographic data with verified provenance/licensing and suitable projection, continuous camera movement without rectangular map panels, anchored non-overlapping labels, animated original Signal G and layered story-specific visuals. No new preview design is approved by this feedback.
+
 ## Open
 These are not decided. Each needs an owner decision before work depends on it.
 
@@ -166,7 +169,6 @@ These are not decided. Each needs an owner decision before work depends on it.
 - **Thread model:** whether video build threads should move from the current
   model to Haiku 5.5 at medium effort.
 - **Partner flags:** only the US, China, the EU and Japan have flags. The other partner flags await the owner's list of countries.
-- **Music level:** the mix level under narration may be adjusted after the owner listens.
 - **Light theme:** final colour tokens and map/quote/thumbnail artwork pending review.
 - **Ivory:** the owner chose #F7F8F2 for text. Whether it is clear of other brands' colors is not checked.
 - **Visual module refinement:** final artwork, map detail/dataset/boundary handling, precise reading/hold times and further owner questions. Supported variants are approved above; production render approval remains separate.

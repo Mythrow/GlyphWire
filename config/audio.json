@@ -11,9 +11,15 @@
     "bpm": 128,
     "beatsPerBar": 4,
     "loopEndSeconds": null,
-    "voiceGain": null,
-    "musicGain": null,
+    "voiceGain": 1.4125375446227544,
+    "musicGain": 0.28183829312644537,
     "rightsStatus": "redistribution_not_verified",
-    "status": "owner_approved_track_mix_pending"
+    "status": "owner_approved_gain_targets_rights_and_loop_pending",
+    "duckedMusicGain": 0.19952623149688797,
+    "voiceGainDb": 3,
+    "musicGainDb": -11,
+    "duckedMusicGainDb": -14,
+    "duckDepthDb": 3,
+    "gainReference": "Linear amplitude relative to original source; 1.0 = 100%. Duck 3 dB during narration, smooth transitions; verify clipping and loudness in final mix."
   }
 }
