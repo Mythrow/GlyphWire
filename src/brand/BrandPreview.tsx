@@ -20,7 +20,8 @@ export const BrandPreview: React.FC = () => {
       <div
         style={{
           fontFamily: fontFamily.label,
-          fontSize: sizes.label,
+          fontSize: sizes.header,
+          fontWeight: 500,
           color: palette.primary,
           letterSpacing: ".06em",
           opacity: label,
@@ -32,7 +33,7 @@ export const BrandPreview: React.FC = () => {
       <div
         style={{
           fontFamily: fontFamily.display,
-          fontWeight: 700,
+          fontWeight: 600,
           fontSize: sizes.headline,
           lineHeight: 1.04,
           color: palette.text,
@@ -61,13 +62,14 @@ export const BrandPreview: React.FC = () => {
           padding: 56,
           fontFamily: fontFamily.body,
           fontSize: sizes.body,
+          fontWeight: 500,
           lineHeight: 1.35,
           color: palette.text,
           opacity: lower,
           transform: `translateY(${(1 - lower) * 40}px)`,
         }}
       >
-        <div style={{ fontFamily: fontFamily.label, fontSize: sizes.label, color: palette.primary }}>
+        <div style={{ fontFamily: fontFamily.label, fontSize: sizes.label, fontWeight: 600, color: palette.primary }}>
           CONFIRMED · 2 SOURCES
         </div>
         <div style={{ marginTop: 24 }}>Body line for the lower third, one idea only.</div>
@@ -79,7 +81,8 @@ export const BrandPreview: React.FC = () => {
           left: 96,
           bottom: 140,
           fontFamily: fontFamily.label,
-          fontSize: Math.max(sizes.label, minTextPx),
+          fontSize: Math.max(sizes.header, minTextPx),
+          fontWeight: 500,
           color: palette.muted,
         }}
       >

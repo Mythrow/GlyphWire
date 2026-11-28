@@ -29,7 +29,8 @@ export const ShortTemplate: React.FC<ShortProps> = (props) => {
       <div
         style={{
           fontFamily: fontFamily.label,
-          fontSize: Math.max(sizes.label, minTextPx),
+          fontSize: Math.max(sizes.header, minTextPx),
+          fontWeight: 500,
           color: palette.primary,
           letterSpacing: ".06em",
           opacity: label,
@@ -41,7 +42,7 @@ export const ShortTemplate: React.FC<ShortProps> = (props) => {
       <div
         style={{
           fontFamily: fontFamily.display,
-          fontWeight: 700,
+          fontWeight: 600,
           fontSize: sizes.headline,
           lineHeight: 1.04,
           color: palette.text,
@@ -69,7 +70,8 @@ export const ShortTemplate: React.FC<ShortProps> = (props) => {
             key={i}
             style={{
               fontFamily: fontFamily.body,
-              fontSize: 40,
+              fontSize: sizes.body,
+              fontWeight: 500,
               lineHeight: 1.25,
               color: palette.text,
               display: "flex",
@@ -78,7 +80,7 @@ export const ShortTemplate: React.FC<ShortProps> = (props) => {
               opacity: enter(f, durationFrames.slow + staggerFrames * (i + 1), durationFrames.base),
             }}
           >
-            <span style={{ fontFamily: fontFamily.label, color: palette.primary, minWidth: 48 }}>{String(i + 1).padStart(2, "0")}</span>
+            <span style={{ fontFamily: fontFamily.label, fontWeight: 600, color: palette.primary, minWidth: 48 }}>{String(i + 1).padStart(2, "0")}</span>
             <span>{fact}</span>
           </div>
         ))}
@@ -96,6 +98,7 @@ export const ShortTemplate: React.FC<ShortProps> = (props) => {
           padding: 56,
           fontFamily: fontFamily.body,
           fontSize: sizes.body,
+          fontWeight: 500,
           lineHeight: 1.35,
           color: palette.text,
           opacity: lowerOpacity,

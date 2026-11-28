@@ -3,7 +3,7 @@ import { AbsoluteFill, Audio, staticFile, useCurrentFrame, useVideoConfig } from
 import { Logo } from "../brand/Logo";
 import { durationFrames, enter, staggerFrames, motionTicks } from "../brand/motion";
 import { fontFamily } from "../brand/fonts";
-import { palette, sizes, minTextPx } from "../brand/tokens";
+import { palette, sizes, minTextPx, typeRoles } from "../brand/tokens";
 import { LetterReveal } from "./LetterReveal";
 import { Hero } from "./Hero";
 import { OriginalHero } from "./OriginalHero";
@@ -32,22 +32,22 @@ export const TopicShort: React.FC<TopicShortProps> = (props) => {
   return (
     <AbsoluteFill style={{ background: palette.background, padding: 96, boxSizing: "border-box" }}>
       {props.audioPath ? <Audio src={staticFile(props.audioPath)} /> : null}
-      <div style={{ ...(original ? {} : {position: "absolute", left: 96, top: 156, transformOrigin: "left center"}), fontFamily: fontFamily.label, fontSize: Math.max(sizes.label, minTextPx), color: palette.primary, letterSpacing: ".06em", opacity: label, transform: `translateY(${(original ? 0 : -50)}%) translateY(${(1 - label) * -20}px)` }}>
+      <div style={{ ...(original ? {} : {position: "absolute", left: 96, top: 156, transformOrigin: "left center"}), fontFamily: fontFamily.label, fontSize: Math.max(sizes.header, minTextPx), fontWeight: typeRoles.header.weight, color: palette.primary, letterSpacing: ".06em", opacity: label, transform: `translateY(${(original ? 0 : -50)}%) translateY(${(1 - label) * -20}px)` }}>
         <LetterReveal text={props.category} start={0} perChar={1} duration={8} />
       </div>
 
       <div
         style={{
           fontFamily: fontFamily.display,
-          fontWeight: 700,
-          fontSize: !original && props.headlineLines ? 90 : sizes.headline,
+          fontWeight: typeRoles.openingHeadline.weight,
+          fontSize: sizes.headline,
           lineHeight: 1.04,
           color: palette.text,
           ...(original ? {marginTop: 120} : {position: "absolute", top: 258, left: 96, right: 96}),
           textAlign: original ? "left" : "center",
           letterSpacing: original ? 0 : "-0.025em",
           opacity: headline,
-          transform: `translateY(${(1 - headline) * 24}px) scale(${1 - 0.42 * shrink})`,
+          transform: `translateY(${(1 - headline) * 24}px) scale(${1 - (1 - sizes.persistentHeadline / sizes.headline) * shrink})`,
           // Keep the editorial headline on the vertical centreline throughout its scale animation.
           transformOrigin: original ? "left top" : "center top",
         }}
@@ -70,9 +70,9 @@ export const TopicShort: React.FC<TopicShortProps> = (props) => {
             top: 640,
             left: 96,
             right: 96,
-            fontFamily: fontFamily.display,
-            fontWeight: 700,
-            fontSize: 96,
+            fontFamily: fontFamily.label,
+            fontWeight: typeRoles.topicSubtext.weight,
+            fontSize: sizes.subhead,
             lineHeight: 1.05,
             color: palette.primary,
             textAlign: "center",

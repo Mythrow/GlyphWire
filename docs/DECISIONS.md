@@ -21,7 +21,7 @@ Last updated: 2026-11-28.
 
 ### Brand kit (approved 2026-11-19 and 2026-11-24)
 - **Palette:** Option A Signal, dark. Signal Lime #A3E635 is primary. Wire Cyan #38BDF8 is secondary. Alert Coral #FF625C is for alerts. Ink #0B0F14 is the background. Panel #111820 is for surfaces. Ivory #F7F8F2 is the text color. Tokens are in `brand/tokens.json`.
-- **Typefaces:** Space Grotesk for headlines, Inter for body, JetBrains Mono for labels. The smallest text is 32px on a 1080 px frame.
+- **Historical typefaces (superseded 2026-11-28):** Space Grotesk for headlines, Inter for body, JetBrains Mono for labels. The smallest text is 32px on a 1080 px frame.
 - **Motion:** durations, easing and stagger in `brand/tokens.json`. No bounce and no spin.
 - **Logo:** "Signal G". A lime ring G with a solid source node and a short bar, plus three thin fading lime arcs. Lime only, no cyan in the mark. Files are in `brand/logo/`.
 - **Frame:** 9:16, native 1080 × 1920 px, 60 FPS for all previews and final videos (owner approved 2026-11-27).
@@ -144,6 +144,9 @@ Choose variants according to the story, not a fixed sequence. Approval applies t
 ### Narrator reaffirmed (owner directed 2026-11-28)
 - Owner rejected the Qwen female auditions and chose to stick with the original Kokoro narrator: Kokoro-82M, af_jessica, American English (lang_code a), speed 1.0. Keep config/audio.json synthesis parameters unchanged. One narrator across Shorts; do not reopen Qwen auditions without owner authorization.
 - Lift the temporary narrator-selection hold. Resume scene-based narration with mandatory playable HTML preview and explicit owner approval, independent ASR/pronunciation QA, genuine WhisperX alignment, checksums and structured ZIP. No individual narration is approved solely by this decision.
+
+### Typography selection (owner approved 2026-11-28)
+Use the owner-approved typography roles in brand/tokens.json (2026-11-28): Oxanium 500/32px header; Space Grotesk 600/80–96px opening headline shrinking as one fixed layer to 40px; Oxanium 600/36px topic, Oxanium 500/60px topic subtext; Montserrat 500/48px supporting/bottom text; Montserrat 500/48px genuine italic only for verified direct quotations; Montserrat 500/32px upright attribution; Oxanium 600 adaptive key figures and Oxanium 500/32px secondary labels. Paired dates share font, weight, size and baseline. Preserve 32px minimum. Inter and JetBrains Mono are superseded for new production. Keep all other brand/motion rules. Use the existing semantic accent colours sparingly, preserve the font size, weight and style of highlighted text, and do not confuse paraphrase with a quote. This rule supersedes earlier family and size guidance.
 
 ## Open
 These are not decided. Each needs an owner decision before work depends on it.
